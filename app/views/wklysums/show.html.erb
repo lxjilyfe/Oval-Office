@@ -1,0 +1,14 @@
+<h3>每日小结</h3>
+<p>
+ 
+  <%=h @wklysum.dateComposed %>
+</p>
+
+<p>
+
+  <%=h @wklysum.content %>
+</p>
+
+
+<%= link_to '编辑', edit_wklysum_path(@wklysum) %> |
+<%= link_to '后退', wklysums_path %>

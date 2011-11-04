@@ -1,0 +1,33 @@
+<p>
+  <b>编号:</b>
+  <%=h @wro.wrono %>
+</p>
+
+<p>
+  <b>标题:</b>
+  <%=h @wro.title %>
+</p>
+
+<p>
+  <b>发布日期:</b>
+  <%=h @wro.dateIssued %>
+</p>
+
+<p>
+  <b>编制人:</b>
+  <%=h @wro.composedBy %>
+</p>
+
+<p>
+  <b>当前进展:</b>
+  <%=h @wro.currentStatus %>
+</p>
+
+<p>
+  <b>是否开口:</b>
+  <%=h @wro.open %>
+</p>
+
+
+<%= link_to '编辑', edit_wro_path(@wro) %> |
+<%= link_to '后退', wros_path %>

@@ -1,0 +1,35 @@
+<h3>新建WRO</h3>
+
+<% form_for(@wro) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%#= f.label :wrono%>编号<br />
+    <%= f.text_field :wrono %>
+  </p>
+  <p>
+    标题<br />
+    <%= f.text_field :title %>
+  </p>
+  <p>
+    发放日期<br />
+    <%= f.date_select :dateIssued %>
+  </p>
+  <p>
+    编制人<br />
+    <%= f.text_field :composedBy %>
+  </p>
+  <p>
+    当前进展<br />
+    <%= f.text_area :currentStatus %>
+  </p>
+  <p>
+    是否开口<br />
+    <%= f.check_box :open %>
+  </p>
+  <p>
+    <%= f.submit '创建' %>
+  </p>
+<% end %>
+
+<%= link_to '后退', wros_path %>

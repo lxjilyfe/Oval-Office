@@ -1,0 +1,232 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Oval Office-支线项目办信息平台</title>
+<meta name="keywords" content="信息共享,文件管理, 知识库, 业务互动" />
+<meta name="description" content="信息共享,文件管理, 知识库, 业务互动" />
+  <%= stylesheet_link_tag "oval_office" %>
+  <%= javascript_include_tag "clearText" %>
+  <%= stylesheet_link_tag "default.ultimate" %>
+  <%= stylesheet_link_tag "dropdown" %>
+</head>
+<body>
+
+<div id="oval_office_container">
+	<div id="oval_office_site_title_bar">
+        <div id="site_title">
+            <h1>
+                <a href="#">Oval Office<span>支线办信息共享平台</span></a>
+            </h1>
+        </div>
+
+        <div id="top_menu">
+        	<div class="home_menu"><a href="./"></a></div>
+            <div class="contact_us"><a href="#"></a></div>
+        </div>
+        <div id="apDiv1">
+      <ul id="nav" class="dropdown dropdown-horizontal">
+	<li id="n-home"><a href="./">Home</a></li>
+	<li id="n-shows"><a href="./" class="dir">管理工具</a>
+		<ul>
+                  <li class="first"><strong><%=section_link('WRO跟踪', :controller => 'wros', :action => 'index') %></strong></li>
+		  <li><%=section_link('行动项目跟踪', :controller => 'executables', :action => 'index') %></li>
+		</ul>
+	</li>
+	<li id="n-shows"><a href="#" class="dir">文档库</a>
+		<ul>
+		       <li class="first"><a href="#" class="dir"><strong>每日小结</strong></a>
+                         <ul>
+                                <li><%=section_link('朱中峤', :controller => 'wklysums', :action => 'index') %></li>
+                         </ul>
+                       </li>
+		</ul>
+	</li>
+        <li id="n-shows"><a href="./" class="dir">快速传送门</a>
+		<ul>
+			<li class="first"><a href="http://arjcpc.acac.com/ProjectLink/wtcore/jsp/arj/pos/index.jsp"><strong>运行管理</strong></a></li>
+			<li><a href="http://10.8.8.20/ioa/appl/bulletindb.nsf/BySubject?OpenView">电子公告</a></li>
+			<li><a href="http://cpcserver.samf.com/Windchill/servlet/WindchillAuthGW/wt.enterprise.URLProcessor/URLTemplateAction?action=IntegratedSearch&u8=1&query=20">CPC平台搜索</a></li>
+			<li><a href="http://pdm.samf.com/Windchill/wtcore/jsp/ext/samf/customuser/customnavigation.jsp">CPC平台入口</a></li>
+		        <li><a href="http://10.30.52.32:8080/ZHSF/">ACAC支线计划管理系统</a></li>
+                </ul>
+	</li>
+</ul>
+    </div>
+    </div> <!-- oval_office_site_title_bar -->
+
+    <div id="oval_office_banner_bar">
+
+        <h2>支线项目办公室简介</h2>
+        <p>支线项目办公室是一只年轻的队伍，由九个人组成：一位主任助理、一位室主任、五位项目管理员组成。</p>
+        <div class="button_01 fr"><a href="#">更多</a></div>
+
+    </div> <!-- end of oval_office_banner_bar -->
+
+    <div id="oval_office_menu">
+    	<%#*<ul>%>
+            <%#*<li><%=section_link('主页', :controller => 'homes', :action => 'index') %>
+            <%#*<li><%=section_link('专题库', :controller => 'homes', :action => 'update') %>
+            <%#*<li><a href="#"> 文档库</a></li>%>
+            <%#*<li><a href="#"> 新闻</a></li>%>
+            <%#*<li><%=section_link('管理工具', :controller => 'wros', :action => 'index') %>
+            <%#*<li><a href="#">联系方式</a></li>%>
+        <%#*</ul>%>
+    </div> <!-- end of menu -->
+
+    <div id="oval_office_content_wrapper">
+
+    	<div id="oval_office_content">
+
+            <div id="main_column">
+
+                <div class="section_w590">
+                    <h3>欢迎来到支线项目办公室</h3>
+
+                     <img class="image_wrapper fl_image" src="images/arj21-700_104.jpg" alt="image" />
+
+                    <p>预投产批交付构型冻结，预投产总清单和成品件装机总清单获得局方批准
+     预投产批交付状态规范书仍有三份尚未与西飞国际达成一致意见，需继续协调；
+     预投产总清单和成品件装机总清单，两份表明批产构型的基础文件，已于5月14日通过局方批准，但部分系统和结构件未纳入，将影响大部件交付和成品配套；
+     上飞公司已与供应商就交付状态冻结问题进行磋商，并达成一致。
+</p>
+
+
+                <div class="cleaner"></div>
+                </div>
+
+                <div class="cleaner_h30"></div>
+
+                <div class="section_w590">
+
+                  <h3>104架全机地面共振试验</h3>
+
+                     <img class="image_wrapper fr_image" src="images/arj21-700_1k.jpg" alt="image" />
+
+                    <p>
+     09年10月-11月，上飞公司与中航商飞、上飞院共同对西飞、成飞、沈飞及637所进行了预投产质量体系的审核，审核结果获得适航的认可；
+     中国商飞内部的预投产质量体系审核，由总质量师牵头，三大中心分别与局方就预投产质量体系文件进行了充分的沟通和交流，截至5月24日，检查组提出的97项问题已关闭95项，西南片区还有1项机载软件控制问题，计划于5月28日前完成。
+</p>
+
+                    <div class="cleaner_h20"></div>
+                    <ul class="list_01">
+                    <li>后应急门与内饰板有擦碰现象，须排故。</li>
+                        <li>服务门密封问题需要排故</li>
+                        <li>座椅安装与调整将由供应商完成</li>
+                        <li>应急照明试验将影响应急撤离试验</li>
+                    </ul>
+
+                    <div class="button_01"><a href="#">更多</a></div>
+                </div>
+
+                <div class="cleaner"></div>
+            </div> <!-- end of main column -->
+
+            <div id="side_column">
+
+                <div class="side_column_box">
+                  <h3>近期新闻</h3>
+
+                    <div class="news_section">
+                    	<img src="images/arj21-700_dcf.JPG" alt="image" width="240" class="image_wrapper" />
+                        <h4>102架大侧风试飞圆满成功</h4>
+                        <p>备受关注的102架大侧风试飞于2010年6月1日圆满结束，并于6月2日成功转场西安阎良。  <a href="#">Read more...</a></p>
+                  </div>
+
+                    <div class="news_section">
+                    	<img src="images/arj21-700_gfd.jpg" alt="image" width="240" class="image_wrapper" />
+                        <h4>阎良跟飞队全力推进试飞工作</h4>
+                        <p>2010年5月9日星期日，跟试跟飞队员们仍坚守岗位，在现场讨论有关工作的安排。<a href="#"> Read more...</a></p>
+                  </div>
+
+                    <div class="button_01"><a href="#">全部查看</a></div>
+                </div>
+
+                <div class="side_column_box">
+
+                    <h3>新闻搜索</h3>
+                    <form action="#" method="get">
+                        <input type="text" value="请输入关键词搜索..." name="q" size="10" class="inputfield" title="searchfield" onfocus="clearText(this)" onblur="clearText(this)" />
+
+                        <input type="submit" name="Search" value="搜索" alt="Search" class="submitbutton" title="Search" />
+                    </form>
+                </div>
+
+            </div> <!-- end of side column -->
+
+            <div class="divider"> </div>
+
+             <div class="footer_box m_right">
+             <div class="footer_bottom"></div>
+
+            <h5>五项管理	</h5>
+
+            <div class="footer_box_content">
+       	    <p>五项管理是新支线项目管理的五个领域，它包括：</p>
+                <div class="cleaner_h10"></div>
+		        <ul class="list_01">
+                    <li>协调构型管理</li>
+                    <li>协调质量管理</li>
+                    <li>协调供应商管理</li>
+                  	<li>协调适航管理</li>
+                    <li>协调风险管理</li>
+                </ul>
+
+	            <div class="button_01"><a href="#">更多</a></div>
+			</div>
+
+        </div>
+
+         <div class="footer_box m_right">
+             <div class="footer_bottom"></div>
+
+            <h5>六项计划</h5>
+
+            <div class="footer_box_content">
+                <p>六项计划是五项管理的脉络，是开展五项管理的具体依据</p>
+                <div class="cleaner_h10"></div>
+                <ul class="list_01">
+                    <li>主进度计划</li>
+                    <li>试飞计划</li>
+                    <li>适航计划</li>
+                    <li>采购计划</li>
+                    <li>质量计划</li>
+                    <li>项目计划</li>
+                </ul>
+                <div class="button_01"><a href="#">更多</a></div>
+            </div>
+
+        </div>
+
+         <div class="footer_box">
+             <div class="footer_bottom"></div>
+
+            <h5>办公室的明天</h5>
+
+            <div class="footer_box_content">
+            	<p>我们的明天会更好</p>
+                <div class="cleaner_h10"></div>
+                <ul class="list_01">
+                    <li>研制批问题总结</li>
+                    <li>预投产批问题清理</li>
+                    <li>内部组织结构责任</li>
+                    <li>建议</li>
+                </ul>
+	            <div class="button_01"><a href="#">更多</a></div>
+			</div>
+
+        </div>
+
+        <div class="cleaner"></div>
+        </div> <!-- end of content -->
+
+    	<div class="cleaner"></div>
+    </div> <!-- end of templatmeo_content_wrapper -->
+
+    <div id="oval_office_footer_bar_wrapper">
+        <div id="oval_office_footer_bar">
+        Copyright © 2024 Project Operation Dept | <a href="http://10.8.8.60/">Shanghai Aircraft Manufacturing Corp</a> | Comac China</div>  <!-- end of footer -->
+	</div> <!-- end of footer_wrapper -->
+</div> <!-- end of container -->
+</body>
+</html>

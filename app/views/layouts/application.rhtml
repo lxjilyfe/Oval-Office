@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Oval Office-支线项目办信息平台</title>
+<meta name="keywords" content="信息共享,文件管理, 知识库, 业务互动" />
+<meta name="description" content="信息共享,文件管理, 知识库, 业务互动" />
+  <%= stylesheet_link_tag "oval_office" %>
+  <%= javascript_include_tag "clearText" %>
+  <%= stylesheet_link_tag "default.ultimate" %>
+  <%= stylesheet_link_tag "dropdown" %>
+</head>
+<body>
+
+<div id="oval_office_container">
+	<div id="oval_office_site_title_bar">
+        <div id="site_title">
+            <h1>
+                <a href="#">Oval Office<span>支线办信息共享平台</span></a>
+            </h1>
+        </div>
+
+        <div id="top_menu">
+        	<div class="home_menu"><a href="#"></a></div>
+            <div class="contact_us"><a href="#"></a></div>
+        </div>
+        <div id="apDiv1">
+      <ul id="nav" class="dropdown dropdown-horizontal">
+	<li id="n-home"><%=section_link('主页', :controller => 'homes', :action => 'index') %></li>
+	<li id="n-shows"><a href="./" class="dir">管理工具</a>
+		<ul>
+                  <li class="first"><strong><%=section_link('WRO跟踪', :controller => 'wros', :action => 'index') %></strong></li>
+			<li><%=section_link('行动项目跟踪', :controller => 'executables', :action => 'index') %></li>
+		</ul>
+	</li>
+	<li id="n-shows"><a href="./" class="dir">文档库</a>
+		<ul>
+		       <li class="first"><a href="./" class="dir"><strong>每日小结</strong></a>
+                         <ul>
+                                <li><%=section_link('朱中峤', :controller => 'wklysums', :action => 'index') %></li>
+                         </ul>
+                       </li>
+		</ul>
+	</li>
+        <li id="n-shows"><a href="./" class="dir">快速传送门</a>
+		<ul>
+			<li class="first"><a href="http://arjcpc.acac.com/ProjectLink/wtcore/jsp/arj/pos/index.jsp"><strong>运行管理</strong></a></li>
+			<li><a href="http://10.8.8.20/ioa/appl/bulletindb.nsf/BySubject?OpenView">电子公告</a></li>
+			<li><a href="http://cpcserver.samf.com/Windchill/servlet/WindchillAuthGW/wt.enterprise.URLProcessor/URLTemplateAction?action=IntegratedSearch&u8=1&query=20">CPC平台搜索</a></li>
+			<li><a href="http://pdm.samf.com/Windchill/wtcore/jsp/ext/samf/customuser/customnavigation.jsp">CPC平台入口</a></li>
+		        <li><a href="http://10.30.52.32:8080/ZHSF/">ACAC支线计划管理系统</a></li>
+                </ul>
+	</li> 
+      </ul>
+    </div>
+    </div> <!-- oval_office_site_title_bar -->
+
+    <div id="oval_office_banner_bar">
+
+        <h2>支线项目办公室简介</h2>
+        <p>支线项目办公室是一只年轻的队伍，由九个人组成：一位主任助理、一位室主任、五位项目管理员组成。</p>
+        <div class="button_01 fr"><a href="#">更多</a></div>
+
+    </div> <!-- end of oval_office_banner_bar -->
+
+    <div id="oval_office_menu">
+
+    </div> <!-- end of menu -->
+
+    <div id="oval_office_content_wrapper">
+
+    	<div id="oval_office_content">
+
+            <div id="main_column">
+
+                <div class="section_w590">
+
+
+                    <p style="color: green"><%= flash[:notice] %></p>
+                    <p><%= yield %></p>
+
+                <div class="cleaner"></div>
+                </div>
+
+                <div class="cleaner_h30"></div>
+
+
+
+                <div class="cleaner"></div>
+            </div> <!-- end of main column -->
+
+        <div class="cleaner"></div>
+        </div> <!-- end of content -->
+
+    	<div class="cleaner"></div>
+    </div> <!-- end of templatmeo_content_wrapper -->
+
+    <div id="oval_office_footer_bar_wrapper">
+        <div id="oval_office_footer_bar">
+        Copyright © 2024 Project Operation Dept | <a href="http://10.8.8.60/">Shanghai Aircraft Manufacturing Corp</a> | Comac China</div>  <!-- end of footer -->
+	</div> <!-- end of footer_wrapper -->
+</div> <!-- end of container -->
+</body>
+</html>

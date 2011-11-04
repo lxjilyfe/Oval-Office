@@ -1,0 +1,30 @@
+<h3>工作小结</h3>
+
+<table id="box-table-a" summary="wklysums">
+  <thead>
+  <tr>
+    <th>创建日期</th>
+    <th align="center">正文</th>
+    <th width="30"></th>
+    <th width="30">操作</th>
+    <th width="30"></th>
+  </tr>
+  </thead>
+
+
+<% @wklysums.each do |wklysum| %>
+  <tbody>
+  <tr>
+    <td><%=h wklysum.dateComposed %></td>
+    <td height="10"><%=h wklysum.content %></td>
+    <td><%= link_to '详细', wklysum %></td>
+    <td><%= link_to '编辑', edit_wklysum_path(wklysum) %></td>
+    <td><%= link_to '删除', wklysum, :confirm => '你滴确定滴干活?', :method => :delete %></td>
+  </tr>
+  </tbody>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to '新建每日小结', new_wklysum_path %>

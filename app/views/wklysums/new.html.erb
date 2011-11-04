@@ -1,0 +1,19 @@
+<h3>新建每日小结</h3>
+
+<% form_for(@wklysum) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :dateComposed %><br />
+    <%= f.date_select :dateComposed %>
+  </p>
+  <p>
+    <%= f.label :content %><br />
+    <%= f.text_area :content %>
+  </p>
+  <p>
+    <%= f.submit '新建' %>
+  </p>
+<% end %>
+
+<%= link_to '后退', wklysums_path %>

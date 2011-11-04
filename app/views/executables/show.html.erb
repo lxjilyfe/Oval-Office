@@ -1,0 +1,49 @@
+<h3>行动项目详情</h3>
+<p>
+  <b>标题:</b>
+  <%=h @executable.title %>
+</p>
+
+<p>
+  <b>行动来源:</b>
+  <%=h @executable.source %>
+</p>
+
+<p>
+  <b>影响架次:</b>
+  <%=h @executable.flightNo %>
+</p>
+
+<p>
+  <b>主责部门:</b>
+  <%=h @executable.dip %>
+</p>
+
+<p>
+  <b>配合部门:</b>
+  <%=h @executable.da %>
+</p>
+
+<p>
+  <b>发放日期:</b>
+  <%=h @executable.dateIssued %>
+</p>
+
+<p>
+  <b>要求关闭日期:</b>
+  <%=h @executable.dateRequiredToClose %>
+</p>
+
+<%#*<p>%>
+  <%#*<b>Dateclosed:</b>%>
+  <%#=h @executable.dateClosed %>
+<%#*</p>%>
+
+<p>
+  <b>备注:</b>
+  <%=h @executable.addition %>
+</p>
+
+
+<%= link_to '编辑', edit_executable_path(@executable) %> |
+<%= link_to '后退', executables_path %>

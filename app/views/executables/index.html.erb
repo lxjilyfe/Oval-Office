@@ -1,0 +1,38 @@
+<h3>行动项目跟踪</h3>
+
+<table id="box-table-a" summary="executables">
+  <thead>
+  <tr>
+    <th>标题</th>
+    <th>影响架次</th>
+    <th>责任部门</th>
+    <th>要求关闭日期</th>
+    <th>备注</th>
+    <th></th>
+    <th>操作</th>
+    <th></th>
+  </tr>
+  </thead>
+
+<% @executables.each do |executable| %>
+  <tbody>
+  <tr>
+    <td width="200"><%=h executable.title %></td>
+ 
+
+    <td><%=h executable.flightNo %></td>
+    <td><%=h executable.dip %></td>
+    <td><%=h executable.dateRequiredToClose %></td>
+    <td width="100"><%=h executable.addition %></td>
+
+    <td><%= link_to '详细', executable %></td>
+    <td><%= link_to '编辑', edit_executable_path(executable) %></td>
+    <td><%= link_to '删除', executable, :confirm => '你滴确定滴干活?', :method => :delete %></td>
+  </tr>
+  </tbody>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to '新建行动项目', new_executable_path %>

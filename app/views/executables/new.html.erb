@@ -1,0 +1,48 @@
+<h3>新建行动项目</h3>
+
+<% form_for(@executable) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    标题<br />
+    <%= f.text_field :title %>
+  </p>
+
+  <p>
+    行动来源<br />
+    <%= f.text_field :source %>
+  </p>
+  <p>
+    影响架次<br />
+    <%= f.text_field :flightNo %>
+  </p>
+  <p>
+    责任部门<br />
+    <%= f.text_field :dip %>
+  </p>
+  <p>
+    配合部门<br />
+    <%= f.text_field :da %>
+  </p>
+  <p>
+    发放日期<br />
+    <%= f.date_select :dateIssued %>
+  </p>
+  <p>
+    要求关闭日期<br />
+    <%= f.date_select :dateRequiredToClose %>
+  </p>
+  <%#*<p>%>
+    <%#*实际关闭日期<br />%>
+    <%#= f.date_select :dateClosed %>
+  <%#*</p>%>
+  <p>
+    备注<br />
+    <%= f.text_field :addition %>
+  </p>
+  <p>
+    <%= f.submit '创建' %>
+  </p>
+<% end %>
+
+<%= link_to '后退', executables_path %>

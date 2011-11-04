@@ -1,0 +1,20 @@
+<h3>每日工作小结</h3>
+
+<% form_for(@wklysum) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    日期<br />
+    <%= f.date_select :dateComposed %>
+  </p>
+  <p>
+    正文<br />
+    <%= f.text_area :content %>
+  </p>
+  <p>
+    <%= f.submit '修改' %>
+  </p>
+<% end %>
+
+<%= link_to '详细', @wklysum %> |
+<%= link_to '后退', wklysums_path %>

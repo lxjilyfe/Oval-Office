@@ -1,0 +1,25 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  title: MyString
+  description: MyText
+  source: MyString
+  flightNo: MyString
+  dip: MyString
+  da: MyString
+  dateIssued: 2010-06-22
+  dateRequiredToClose: 2010-06-22
+  dateClosed: 2010-06-22
+  addition: MyText
+
+two:
+  title: MyString
+  description: MyText
+  source: MyString
+  flightNo: MyString
+  dip: MyString
+  da: MyString
+  dateIssued: 2010-06-22
+  dateRequiredToClose: 2010-06-22
+  dateClosed: 2010-06-22
+  addition: MyText

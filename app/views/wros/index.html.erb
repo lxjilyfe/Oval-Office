@@ -1,0 +1,33 @@
+<h3>WRO列表</h3>
+
+<table id="box-table-a" summary="wro status">
+  <thead>
+    <tr>
+      <th>WRO编号</th>
+        <th>标题</th>
+        <th>发放日期</th>
+        <th>编制人</th>
+        <th></th>
+        <th>操作</th>
+        <th></th>
+    </tr>
+  </thead>
+
+<% @wros.each do |wro| %>
+<tbody>
+        <tr>
+              <td><%=h wro.wrono %></td>
+              <td><%=h wro.title %></td>
+              <td><%=h wro.dateIssued %></td>
+              <td><%=h wro.composedBy %></td>
+              <td width="30"><%= link_to '详细', wro %></td>
+              <td><%= link_to '编辑', edit_wro_path(wro) %></td>
+              <td><%= link_to '删除', wro, :confirm => '你地确定地干活?', :method => :delete %></td>
+        </tr>
+</tbody>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to '新建记录', new_wro_path %>

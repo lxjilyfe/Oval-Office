@@ -1,0 +1,48 @@
+<h3>编辑行动项目</h3>
+
+<% form_for(@executable) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    标题<br />
+    <%= f.text_field :title %>
+  </p>
+  <p>
+    行动来源<br />
+    <%= f.text_field :source %>
+  </p>
+  <p>
+    <%= f.label :flightNo %><br />
+    <%= f.text_field :flightNo %>
+  </p>
+  <p>
+    主责部门<br />
+    <%= f.text_field :dip %>
+  </p>
+  <p>
+    配合部门<br />
+    <%= f.text_field :da %>
+  </p>
+  <p>
+    发布日期<br />
+    <%= f.date_select :dateIssued %>
+  </p>
+  <p>
+    要求完成日期<br />
+    <%= f.date_select :dateRequiredToClose %>
+  </p>
+  <%#*<p>%>
+    <%#= f.label :dateClosed %><br />
+    <%#= f.date_select :dateClosed %>
+  <%#*</p>%>
+  <p>
+    备注<br />
+    <%= f.text_area :addition %>
+  </p>
+  <p>
+    <%= f.submit '修改' %>
+  </p>
+<% end %>
+
+<%= link_to '详细', @executable %> |
+<%= link_to '后退', executables_path %>

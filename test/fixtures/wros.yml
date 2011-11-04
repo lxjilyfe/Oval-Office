@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  wrono: MyString
+  title: MyString
+  dateIssued: 2010-06-18
+  composedBy: MyString
+  currentStatus: MyString
+  open: false
+
+two:
+  wrono: MyString
+  title: MyString
+  dateIssued: 2010-06-18
+  composedBy: MyString
+  currentStatus: MyString
+  open: false

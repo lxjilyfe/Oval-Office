@@ -1,0 +1,2515 @@
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (62.0ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (188.0ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateHomes (20100618100644)
+  [4;36;1mSQL (63.0ms)[0m   [0;1mCREATE TABLE `homes` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `title` varchar(255), `comment` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (31.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100618100644')[0m
+Migrating to CreateWros (20100618101021)
+  [4;36;1mSQL (47.0ms)[0m   [0;1mCREATE TABLE `wros` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `wrono` varchar(255), `title` varchar(255), `dateIssued` date, `composedBy` varchar(255), `currentStatus` varchar(255), `open` tinyint(1), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (15.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100618101021')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#index (for 127.0.0.1 at 2010-06-18 19:54:59) [GET]
+  [4;35;1mHome Load (0.0ms)[0m   [0mSELECT * FROM `homes` [0m
+Rendering template within layouts/homes
+Rendering homes/index
+Completed in 125ms (View: 109, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-18 19:54:59) [GET]
+
+ActionController::RoutingError (No route matches "/images/oval_office_list_icon_01.jpg" with {:method=>:get}):
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 10.8.70.12 at 2010-06-18 19:55:26) [GET]
+
+ActionController::RoutingError (No route matches "/oval_office/" with {:method=>:get}):
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 10.8.70.12 at 2010-06-18 19:55:32) [GET]
+
+ActionController::RoutingError (No route matches "/oval_office/" with {:method=>:get}):
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 10.8.70.12 at 2010-06-18 19:55:33) [GET]
+
+ActionController::RoutingError (No route matches "/oval_office/" with {:method=>:get}):
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 10.8.70.12 at 2010-06-18 19:55:35) [GET]
+
+ActionController::RoutingError (No route matches "/oval_office/" with {:method=>:get}):
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 10.8.70.12 at 2010-06-18 19:55:36) [GET]
+
+ActionController::RoutingError (No route matches "/oval_office/" with {:method=>:get}):
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 10.8.70.12 at 2010-06-18 19:55:37) [GET]
+
+ActionController::RoutingError (No route matches "/oval_office/" with {:method=>:get}):
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 10.8.70.12 at 2010-06-18 19:55:38) [GET]
+
+ActionController::RoutingError (No route matches "/oval_office/" with {:method=>:get}):
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 10.8.70.12 at 2010-06-18 19:55:38) [GET]
+
+ActionController::RoutingError (No route matches "/oval_office/" with {:method=>:get}):
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 10.8.70.12 at 2010-06-18 19:55:39) [GET]
+
+ActionController::RoutingError (No route matches "/oval_office/" with {:method=>:get}):
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 10.8.70.12 at 2010-06-18 19:57:37) [GET]
+
+ActionController::RoutingError (No route matches "/oval_office/" with {:method=>:get}):
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 10.8.70.12 at 2010-06-18 19:57:40) [GET]
+
+ActionController::RoutingError (No route matches "/oval_office/" with {:method=>:get}):
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#index (for 10.8.70.12 at 2010-06-18 19:58:07) [GET]
+  [4;35;1mHome Load (0.0ms)[0m   [0mSELECT * FROM `homes` [0m
+Rendering template within layouts/homes
+Rendering homes/index
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://10.8.70.141/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 10.8.70.12 at 2010-06-18 19:58:20) [GET]
+
+ActionController::RoutingError (No route matches "/images/oval_office_list_icon_01.jpg" with {:method=>:get}):
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WrosController#index (for 10.8.70.12 at 2010-06-18 19:58:40) [GET]
+  [4;36;1mWro Load (0.0ms)[0m   [0;1mSELECT * FROM `wros` [0m
+Rendering template within layouts/application
+Rendering wros/index
+Completed in 282ms (View: 266, DB: 0) | 200 OK [http://10.8.70.141/wros]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WrosController#new (for 10.8.70.12 at 2010-06-18 19:58:42) [GET]
+Rendering template within layouts/application
+Rendering wros/new
+Completed in 172ms (View: 157, DB: 0) | 200 OK [http://10.8.70.141/wros/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WrosController#index (for 10.8.70.12 at 2010-06-18 19:58:45) [GET]
+  [4;35;1mWro Load (0.0ms)[0m   [0mSELECT * FROM `wros` [0m
+Rendering template within layouts/application
+Rendering wros/index
+Completed in 47ms (View: 32, DB: 0) | 200 OK [http://10.8.70.141/wros]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#index (for 127.0.0.1 at 2010-06-18 19:59:27) [GET]
+  [4;35;1mHome Load (0.0ms)[0m   [0mSELECT * FROM `homes` [0m
+Rendering template within layouts/homes
+Rendering homes/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-18 19:59:27) [GET]
+
+ActionController::RoutingError (No route matches "/images/oval_office_list_icon_01.jpg" with {:method=>:get}):
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-18 19:59:41) [GET]
+
+ActionController::RoutingError (No route matches "/wro" with {:method=>:get}):
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-18 19:59:47) [GET]
+
+ActionController::RoutingError (No route matches "/oval_office/wros" with {:method=>:get}):
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WrosController#index (for 127.0.0.1 at 2010-06-18 19:59:55) [GET]
+  [4;36;1mWro Load (0.0ms)[0m   [0;1mSELECT * FROM `wros` [0m
+Rendering template within layouts/application
+Rendering wros/index
+Completed in 63ms (View: 63, DB: 0) | 200 OK [http://localhost/wros]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateHomes (20100618100644)
+Migrating to CreateWros (20100618101021)
+Migrating to CreateExecutables (20100622030356)
+  [4;36;1mSQL (156.0ms)[0m   [0;1mCREATE TABLE `executables` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `title` varchar(255), `description` text, `source` varchar(255), `flightNo` varchar(255), `dip` varchar(255), `da` varchar(255), `dateIssued` date, `dateRequiredToClose` date, `dateClosed` date, `addition` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (47.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100622030356')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (16.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateExecutables (20100622030356)
+  [4;35;1mSQL (32.0ms)[0m   [0mDROP TABLE `executables`[0m
+  [4;36;1mSQL (15.0ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20100622030356'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateHomes (20100618100644)
+Migrating to CreateWros (20100618101021)
+Migrating to CreateExecutables (20100622030356)
+  [4;36;1mSQL (63.0ms)[0m   [0;1mCREATE TABLE `executables` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `title` varchar(255), `description` text, `source` varchar(255), `flightNo` varchar(255), `dip` varchar(255), `da` varchar(255), `dateIssued` date, `dateRequiredToClose` date, `dateClosed` date, `addition` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (15.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100622030356')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateHomes (20100618100644)
+Migrating to CreateWros (20100618101021)
+Migrating to CreateExecutables (20100622030356)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (16.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateHomes (20100618100644)
+Migrating to CreateWros (20100618101021)
+Migrating to CreateExecutables (20100622030356)
+Migrating to AddFlightNoToWro (20100623095032)
+  [4;36;1mSQL (140.0ms)[0m   [0;1mALTER TABLE `wros` ADD `flightNo` varchar(255)[0m
+  [4;35;1mSQL (16.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100623095032')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateHomes (20100618100644)
+Migrating to CreateWros (20100618101021)
+Migrating to CreateExecutables (20100622030356)
+Migrating to AddFlightNoToWro (20100623095032)
+Migrating to CreateWklysums (20100625090912)
+  [4;36;1mSQL (63.0ms)[0m   [0;1mCREATE TABLE `wklysums` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `dateComposed` date, `content` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (31.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100625090912')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#index (for 127.0.0.1 at 2010-08-13 15:21:46) [GET]
+  [4;35;1mHome Load (0.0ms)[0m   [0mSELECT * FROM `homes` [0m
+Rendering template within layouts/homes
+Rendering homes/index
+Completed in 140ms (View: 125, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-13 15:21:47) [GET]
+
+ActionController::RoutingError (No route matches "/images/oval_office_list_icon_01.jpg" with {:method=>:get}):
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#index (for 10.8.70.142 at 2010-08-13 15:22:02) [GET]
+  [4;36;1mHome Load (0.0ms)[0m   [0;1mSELECT * FROM `homes` [0m
+Rendering template within layouts/homes
+Rendering homes/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://10.8.70.141/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 10.8.70.142 at 2010-08-13 15:22:03) [GET]
+
+ActionController::RoutingError (No route matches "/images/oval_office_list_icon_01.jpg" with {:method=>:get}):
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#index (for 10.8.70.142 at 2010-08-13 15:22:16) [GET]
+  [4;35;1mHome Load (0.0ms)[0m   [0mSELECT * FROM `homes` [0m
+Rendering template within layouts/homes
+Rendering homes/index
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://10.8.70.141/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 10.8.70.142 at 2010-08-13 15:22:16) [GET]
+
+ActionController::RoutingError (No route matches "/images/oval_office_list_icon_01.jpg" with {:method=>:get}):
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#index (for 127.0.0.1 at 2010-08-13 15:23:57) [GET]
+  [4;36;1mHome Load (0.0ms)[0m   [0;1mSELECT * FROM `homes` [0m
+Rendering template within layouts/homes
+Rendering homes/index
+Completed in 31ms (View: 0, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-13 15:23:57) [GET]
+
+ActionController::RoutingError (No route matches "/images/oval_office_list_icon_01.jpg" with {:method=>:get}):
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (15.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#index (for 127.0.0.1 at 2010-08-13 15:24:20) [GET]
+  [4;35;1mHome Load (0.0ms)[0m   [0mSELECT * FROM `homes` [0m
+Rendering template within layouts/homes
+Rendering homes/index
+Completed in 31ms (View: 0, DB: 15) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-13 15:24:20) [GET]
+
+ActionController::RoutingError (No route matches "/images/oval_office_list_icon_01.jpg" with {:method=>:get}):
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WrosController#index (for 127.0.0.1 at 2010-08-13 15:24:25) [GET]
+  [4;36;1mWro Load (31.0ms)[0m   [0;1mSELECT * FROM `wros` [0m
+Rendering template within layouts/application
+Rendering wros/index
+Completed in 234ms (View: 203, DB: 31) | 200 OK [http://localhost/wros]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#index (for 127.0.0.1 at 2010-08-17 16:45:10) [GET]
+  [4;35;1mHome Load (15.0ms)[0m   [0mSELECT * FROM `homes` [0m
+Rendering template within layouts/homes
+Rendering homes/index
+Completed in 219ms (View: 188, DB: 15) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-17 16:45:11) [GET]
+
+ActionController::RoutingError (No route matches "/images/oval_office_list_icon_01.jpg" with {:method=>:get}):
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-17 16:47:05) [GET]
+
+ActionController::RoutingError (No route matches "/oval_office/wros" with {:method=>:get}):
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#index (for 127.0.0.1 at 2010-08-17 16:47:13) [GET]
+  [4;35;1mHome Load (0.0ms)[0m   [0mSELECT * FROM `homes` [0m
+Rendering template within layouts/homes
+Rendering homes/index
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-17 16:47:14) [GET]
+
+ActionController::RoutingError (No route matches "/images/oval_office_list_icon_01.jpg" with {:method=>:get}):
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WrosController#index (for 127.0.0.1 at 2010-08-17 16:47:16) [GET]
+  [4;36;1mWro Load (15.0ms)[0m   [0;1mSELECT * FROM `wros` [0m
+Rendering template within layouts/application
+Rendering wros/index
+Completed in 375ms (View: 360, DB: 15) | 200 OK [http://localhost/wros]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#index (for 127.0.0.1 at 2010-08-17 16:47:19) [GET]
+  [4;36;1mHome Load (0.0ms)[0m   [0;1mSELECT * FROM `homes` [0m
+Rendering template within layouts/homes
+Rendering homes/index
+Completed in 47ms (View: 16, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-17 16:47:19) [GET]
+
+ActionController::RoutingError (No route matches "/images/oval_office_list_icon_01.jpg" with {:method=>:get}):
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WklysumsController#index (for 127.0.0.1 at 2010-08-17 16:47:21) [GET]
+  [4;35;1mWklysum Load (31.0ms)[0m   [0mSELECT * FROM `wklysums` [0m
+Rendering template within layouts/application
+Rendering wklysums/index
+Completed in 219ms (View: 172, DB: 31) | 200 OK [http://localhost/wklysums]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WklysumsController#new (for 127.0.0.1 at 2010-08-17 16:48:55) [GET]
+Rendering template within layouts/application
+Rendering wklysums/new
+Completed in 282ms (View: 250, DB: 0) | 200 OK [http://localhost/wklysums/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WklysumsController#create (for 127.0.0.1 at 2010-08-17 16:50:05) [POST]
+  Parameters: {"authenticity_token"=>"yVZsmLPAcFtB+5XFTDcc/bI7v9prY4SGZgP1zh56KUE=", "wklysum"=>{"dateComposed(1i)"=>"2010", "dateComposed(2i)"=>"8", "dateComposed(3i)"=>"11", "content"=>"上午：工装复制协调会\r\n下午：\r\n1.清理行动项目并将其加入8月份项目经理检查会。\r\n2.清理WRO\r\n"}, "commit"=>"新建"}
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO `wklysums` (`dateComposed`, `content`, `created_at`, `updated_at`) VALUES('2010-08-11', '上午：工装复制协调会\r\n下午：\r\n1.清理行动项目并将其加入8月份项目经理检查会。\r\n2.清理WRO\r\n', '2010-08-17 08:50:05', '2010-08-17 08:50:05')[0m
+Redirected to http://localhost:8080/wklysums/16
+Completed in 47ms (DB: 0) | 302 Found [http://localhost/wklysums]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WklysumsController#show (for 127.0.0.1 at 2010-08-17 16:50:05) [GET]
+  Parameters: {"id"=>"16"}
+  [4;36;1mWklysum Load (0.0ms)[0m   [0;1mSELECT * FROM `wklysums` WHERE (`wklysums`.`id` = 16) [0m
+Rendering template within layouts/application
+Rendering wklysums/show
+Completed in 47ms (View: 32, DB: 0) | 200 OK [http://localhost/wklysums/16]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WklysumsController#edit (for 127.0.0.1 at 2010-08-17 16:50:09) [GET]
+  Parameters: {"id"=>"16"}
+  [4;36;1mWklysum Load (0.0ms)[0m   [0;1mSELECT * FROM `wklysums` WHERE (`wklysums`.`id` = 16) [0m
+Rendering template within layouts/application
+Rendering wklysums/edit
+Completed in 78ms (View: 47, DB: 0) | 200 OK [http://localhost/wklysums/16/edit]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WklysumsController#index (for 127.0.0.1 at 2010-08-17 16:50:11) [GET]
+  [4;36;1mWklysum Load (0.0ms)[0m   [0;1mSELECT * FROM `wklysums` [0m
+Rendering template within layouts/application
+Rendering wklysums/index
+Completed in 141ms (View: 125, DB: 0) | 200 OK [http://localhost/wklysums]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WklysumsController#new (for 127.0.0.1 at 2010-08-17 16:50:14) [GET]
+Rendering template within layouts/application
+Rendering wklysums/new
+Completed in 62ms (View: 31, DB: 0) | 200 OK [http://localhost/wklysums/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WklysumsController#create (for 127.0.0.1 at 2010-08-17 16:51:09) [POST]
+  Parameters: {"authenticity_token"=>"yVZsmLPAcFtB+5XFTDcc/bI7v9prY4SGZgP1zh56KUE=", "wklysum"=>{"dateComposed(1i)"=>"2010", "dateComposed(2i)"=>"8", "dateComposed(3i)"=>"12", "content"=>"上午：进行项目体系框架中风险管理与沟通管理两部分的编写。\r\n下午：参加项目管理体系框架讨论会。"}, "commit"=>"新建"}
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO `wklysums` (`dateComposed`, `content`, `created_at`, `updated_at`) VALUES('2010-08-12', '上午：进行项目体系框架中风险管理与沟通管理两部分的编写。\r\n下午：参加项目管理体系框架讨论会。', '2010-08-17 08:51:09', '2010-08-17 08:51:09')[0m
+Redirected to http://localhost:8080/wklysums/17
+Completed in 93ms (DB: 0) | 302 Found [http://localhost/wklysums]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WklysumsController#show (for 127.0.0.1 at 2010-08-17 16:51:09) [GET]
+  Parameters: {"id"=>"17"}
+  [4;35;1mWklysum Load (0.0ms)[0m   [0mSELECT * FROM `wklysums` WHERE (`wklysums`.`id` = 17) [0m
+Rendering template within layouts/application
+Rendering wklysums/show
+Completed in 47ms (View: 16, DB: 0) | 200 OK [http://localhost/wklysums/17]
+  [4;36;1mSQL (15.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WklysumsController#index (for 127.0.0.1 at 2010-08-17 16:51:11) [GET]
+  [4;35;1mWklysum Load (0.0ms)[0m   [0mSELECT * FROM `wklysums` [0m
+Rendering template within layouts/application
+Rendering wklysums/index
+Completed in 156ms (View: 141, DB: 15) | 200 OK [http://localhost/wklysums]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WklysumsController#new (for 127.0.0.1 at 2010-08-17 16:51:13) [GET]
+Rendering template within layouts/application
+Rendering wklysums/new
+Completed in 63ms (View: 47, DB: 0) | 200 OK [http://localhost/wklysums/new]
+  [4;35;1mSQL (16.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WklysumsController#create (for 127.0.0.1 at 2010-08-17 16:52:27) [POST]
+  Parameters: {"authenticity_token"=>"yVZsmLPAcFtB+5XFTDcc/bI7v9prY4SGZgP1zh56KUE=", "wklysum"=>{"dateComposed(1i)"=>"2010", "dateComposed(2i)"=>"8", "dateComposed(3i)"=>"13", "content"=>"上午：参加与客服进行航材保障/采购的讨论会。\r\n下午：整理风险管理档案。"}, "commit"=>"新建"}
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO `wklysums` (`dateComposed`, `content`, `created_at`, `updated_at`) VALUES('2010-08-13', '上午：参加与客服进行航材保障/采购的讨论会。\r\n下午：整理风险管理档案。', '2010-08-17 08:52:27', '2010-08-17 08:52:27')[0m
+Redirected to http://localhost:8080/wklysums/18
+Completed in 62ms (DB: 16) | 302 Found [http://localhost/wklysums]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WklysumsController#show (for 127.0.0.1 at 2010-08-17 16:52:27) [GET]
+  Parameters: {"id"=>"18"}
+  [4;36;1mWklysum Load (0.0ms)[0m   [0;1mSELECT * FROM `wklysums` WHERE (`wklysums`.`id` = 18) [0m
+Rendering template within layouts/application
+Rendering wklysums/show
+Completed in 47ms (View: 32, DB: 0) | 200 OK [http://localhost/wklysums/18]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WklysumsController#index (for 127.0.0.1 at 2010-08-17 16:52:29) [GET]
+  [4;36;1mWklysum Load (15.0ms)[0m   [0;1mSELECT * FROM `wklysums` [0m
+Rendering template within layouts/application
+Rendering wklysums/index
+Completed in 94ms (View: 79, DB: 15) | 200 OK [http://localhost/wklysums]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WklysumsController#new (for 127.0.0.1 at 2010-08-17 16:52:32) [GET]
+Rendering template within layouts/application
+Rendering wklysums/new
+Completed in 46ms (View: 31, DB: 0) | 200 OK [http://localhost/wklysums/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WklysumsController#create (for 127.0.0.1 at 2010-08-17 16:54:13) [POST]
+  Parameters: {"authenticity_token"=>"yVZsmLPAcFtB+5XFTDcc/bI7v9prY4SGZgP1zh56KUE=", "wklysum"=>{"dateComposed(1i)"=>"2010", "dateComposed(2i)"=>"8", "dateComposed(3i)"=>"17", "content"=>"上午：1.清理WRO清单 ；2.清理行动项目清单； 3.学习PMP-SM-223程序。\r\n\r\n下午：1.听取供应商随机工装管理协调会； 2.修改简报版本历史。"}, "commit"=>"新建"}
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO `wklysums` (`dateComposed`, `content`, `created_at`, `updated_at`) VALUES('2010-08-17', '上午：1.清理WRO清单 ；2.清理行动项目清单； 3.学习PMP-SM-223程序。\r\n\r\n下午：1.听取供应商随机工装管理协调会； 2.修改简报版本历史。', '2010-08-17 08:54:13', '2010-08-17 08:54:13')[0m
+Redirected to http://localhost:8080/wklysums/19
+Completed in 63ms (DB: 0) | 302 Found [http://localhost/wklysums]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WklysumsController#show (for 127.0.0.1 at 2010-08-17 16:54:13) [GET]
+  Parameters: {"id"=>"19"}
+  [4;35;1mWklysum Load (15.0ms)[0m   [0mSELECT * FROM `wklysums` WHERE (`wklysums`.`id` = 19) [0m
+Rendering template within layouts/application
+Rendering wklysums/show
+Completed in 47ms (View: 16, DB: 15) | 200 OK [http://localhost/wklysums/19]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WklysumsController#index (for 127.0.0.1 at 2010-08-17 16:54:15) [GET]
+  [4;35;1mWklysum Load (0.0ms)[0m   [0mSELECT * FROM `wklysums` [0m
+Rendering template within layouts/application
+Rendering wklysums/index
+Completed in 94ms (View: 78, DB: 0) | 200 OK [http://localhost/wklysums]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#index (for 127.0.0.1 at 2010-08-19 11:22:04) [GET]
+  [4;35;1mHome Load (16.0ms)[0m   [0mSELECT * FROM `homes` [0m
+Rendering template within layouts/homes
+Rendering homes/index
+Completed in 234ms (View: 203, DB: 16) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-19 11:22:04) [GET]
+
+ActionController::RoutingError (No route matches "/images/oval_office_list_icon_01.jpg" with {:method=>:get}):
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#index (for 127.0.0.1 at 2010-08-19 11:23:53) [GET]
+  [4;36;1mHome Load (0.0ms)[0m   [0;1mSELECT * FROM `homes` [0m
+Rendering template within layouts/homes
+Rendering homes/index
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-19 11:23:53) [GET]
+
+ActionController::RoutingError (No route matches "/images/oval_office_list_icon_01.jpg" with {:method=>:get}):
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WklysumsController#index (for 127.0.0.1 at 2010-08-19 11:23:58) [GET]
+  [4;35;1mWklysum Load (0.0ms)[0m   [0mSELECT * FROM `wklysums` [0m
+Rendering template within layouts/application
+Rendering wklysums/index
+Completed in 344ms (View: 328, DB: 0) | 200 OK [http://localhost/wklysums]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WklysumsController#new (for 127.0.0.1 at 2010-08-19 11:24:01) [GET]
+Rendering template within layouts/application
+Rendering wklysums/new
+Completed in 297ms (View: 281, DB: 0) | 200 OK [http://localhost/wklysums/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WklysumsController#create (for 127.0.0.1 at 2010-08-19 13:40:00) [POST]
+  Parameters: {"authenticity_token"=>"gc68xAzOJuyh1KszJofYUpUNBySoSwwCJ9a73hOFsWE=", "wklysum"=>{"dateComposed(1i)"=>"2010", "dateComposed(2i)"=>"8", "dateComposed(3i)"=>"19", "content"=>"上午： 1.发出更新风险档案的通知。 2.更新与清理WRO清单。 3.协调103架机CCM-5110成品件拆卸与退返事宜。\r\n"}, "commit"=>"新建"}
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO `wklysums` (`dateComposed`, `content`, `created_at`, `updated_at`) VALUES('2010-08-19', '上午： 1.发出更新风险档案的通知。 2.更新与清理WRO清单。 3.协调103架机CCM-5110成品件拆卸与退返事宜。\r\n', '2010-08-19 05:40:00', '2010-08-19 05:40:00')[0m
+Redirected to http://localhost:8080/wklysums/20
+Completed in 63ms (DB: 0) | 302 Found [http://localhost/wklysums]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WklysumsController#show (for 127.0.0.1 at 2010-08-19 13:40:00) [GET]
+  Parameters: {"id"=>"20"}
+  [4;36;1mWklysum Load (0.0ms)[0m   [0;1mSELECT * FROM `wklysums` WHERE (`wklysums`.`id` = 20) [0m
+Rendering template within layouts/application
+Rendering wklysums/show
+Completed in 63ms (View: 32, DB: 0) | 200 OK [http://localhost/wklysums/20]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WklysumsController#index (for 127.0.0.1 at 2010-08-19 13:40:03) [GET]
+  [4;36;1mWklysum Load (0.0ms)[0m   [0;1mSELECT * FROM `wklysums` [0m
+Rendering template within layouts/application
+Rendering wklysums/index
+Completed in 156ms (View: 140, DB: 0) | 200 OK [http://localhost/wklysums]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#index (for 127.0.0.1 at 2010-08-20 16:59:15) [GET]
+  [4;35;1mHome Load (0.0ms)[0m   [0mSELECT * FROM `homes` [0m
+Rendering template within layouts/homes
+Rendering homes/index
+Completed in 188ms (View: 172, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 16:59:15) [GET]
+
+ActionController::RoutingError (No route matches "/images/oval_office_list_icon_01.jpg" with {:method=>:get}):
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#index (for 127.0.0.1 at 2010-08-20 17:14:34) [GET]
+  [4;36;1mHome Load (0.0ms)[0m   [0;1mSELECT * FROM `homes` [0m
+Rendering template within layouts/homes
+Rendering homes/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 17:14:34) [GET]
+
+ActionController::RoutingError (No route matches "/images/oval_office_list_icon_01.jpg" with {:method=>:get}):
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WklysumsController#index (for 127.0.0.1 at 2010-08-20 17:14:38) [GET]
+  [4;35;1mWklysum Load (0.0ms)[0m   [0mSELECT * FROM `wklysums` [0m
+Rendering template within layouts/application
+Rendering wklysums/index
+Completed in 359ms (View: 344, DB: 0) | 200 OK [http://localhost/wklysums]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WklysumsController#new (for 127.0.0.1 at 2010-08-20 17:14:41) [GET]
+Rendering template within layouts/application
+Rendering wklysums/new
+Completed in 234ms (View: 219, DB: 0) | 200 OK [http://localhost/wklysums/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WklysumsController#create (for 127.0.0.1 at 2010-08-20 17:29:45) [POST]
+  Parameters: {"authenticity_token"=>"O6FhN1eiQuO6hogURiJZDi2VmFT8q/DirUCkC2uSgTA=", "wklysum"=>{"dateComposed(1i)"=>"2010", "dateComposed(2i)"=>"8", "dateComposed(3i)"=>"20", "content"=>"上午： 1.协调CCM-5110退返进行软件升级事宜，上海已确定有备件，制工部正在编工艺文件，西安现场已提交备件的发运申请单。2. 清理WRO清单。 \r\n\r\n下午：参见备件与返修件的会议。"}, "commit"=>"新建"}
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO `wklysums` (`dateComposed`, `content`, `created_at`, `updated_at`) VALUES('2010-08-20', '上午： 1.协调CCM-5110退返进行软件升级事宜，上海已确定有备件，制工部正在编工艺文件，西安现场已提交备件的发运申请单。2. 清理WRO清单。 \r\n\r\n下午：参见备件与返修件的会议。', '2010-08-20 09:29:45', '2010-08-20 09:29:45')[0m
+Redirected to http://localhost:8080/wklysums/21
+Completed in 78ms (DB: 0) | 302 Found [http://localhost/wklysums]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WklysumsController#show (for 127.0.0.1 at 2010-08-20 17:29:45) [GET]
+  Parameters: {"id"=>"21"}
+  [4;36;1mWklysum Load (0.0ms)[0m   [0;1mSELECT * FROM `wklysums` WHERE (`wklysums`.`id` = 21) [0m
+Rendering template within layouts/application
+Rendering wklysums/show
+Completed in 78ms (View: 47, DB: 0) | 200 OK [http://localhost/wklysums/21]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#index (for 127.0.0.1 at 2010-08-24 16:37:49) [GET]
+  [4;35;1mHome Load (0.0ms)[0m   [0mSELECT * FROM `homes` [0m
+Rendering template within layouts/homes
+Rendering homes/index
+Completed in 203ms (View: 187, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-24 16:37:50) [GET]
+
+ActionController::RoutingError (No route matches "/images/oval_office_list_icon_01.jpg" with {:method=>:get}):
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#index (for 127.0.0.1 at 2010-08-24 16:38:15) [GET]
+  [4;36;1mHome Load (0.0ms)[0m   [0;1mSELECT * FROM `homes` [0m
+Rendering template within layouts/homes
+Rendering homes/index
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-24 16:38:15) [GET]
+
+ActionController::RoutingError (No route matches "/images/oval_office_list_icon_01.jpg" with {:method=>:get}):
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WklysumsController#index (for 127.0.0.1 at 2010-08-24 16:38:22) [GET]
+  [4;35;1mWklysum Load (0.0ms)[0m   [0mSELECT * FROM `wklysums` [0m
+Rendering template within layouts/application
+Rendering wklysums/index
+Completed in 344ms (View: 328, DB: 0) | 200 OK [http://localhost/wklysums]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WklysumsController#new (for 127.0.0.1 at 2010-08-24 16:38:26) [GET]
+Rendering template within layouts/application
+Rendering wklysums/new
+Completed in 250ms (View: 235, DB: 0) | 200 OK [http://localhost/wklysums/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WklysumsController#create (for 127.0.0.1 at 2010-08-24 17:01:20) [POST]
+  Parameters: {"authenticity_token"=>"M0PX0btt9KDCZxOCASOyJlDioUh7r5Y+aPDnLuOM+nQ=", "wklysum"=>{"dateComposed(1i)"=>"2010", "dateComposed(2i)"=>"8", "dateComposed(3i)"=>"24", "content"=>"上午：1.协调退返水平安定面作动器。2.协助布置FRR清理会会场。3.协调风险档案的跟踪工作。\r\n\r\n上午：1.清理WRO清单。2.编写简报版本历史。"}, "commit"=>"新建"}
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO `wklysums` (`dateComposed`, `content`, `created_at`, `updated_at`) VALUES('2010-08-24', '上午：1.协调退返水平安定面作动器。2.协助布置FRR清理会会场。3.协调风险档案的跟踪工作。\r\n\r\n上午：1.清理WRO清单。2.编写简报版本历史。', '2010-08-24 09:01:20', '2010-08-24 09:01:20')[0m
+Redirected to http://localhost:8080/wklysums/22
+Completed in 63ms (DB: 0) | 302 Found [http://localhost/wklysums]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WklysumsController#show (for 127.0.0.1 at 2010-08-24 17:01:20) [GET]
+  Parameters: {"id"=>"22"}
+  [4;36;1mWklysum Load (0.0ms)[0m   [0;1mSELECT * FROM `wklysums` WHERE (`wklysums`.`id` = 22) [0m
+Rendering template within layouts/application
+Rendering wklysums/show
+Completed in 62ms (View: 47, DB: 0) | 200 OK [http://localhost/wklysums/22]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WklysumsController#index (for 127.0.0.1 at 2010-08-24 17:01:23) [GET]
+  [4;36;1mWklysum Load (0.0ms)[0m   [0;1mSELECT * FROM `wklysums` [0m
+Rendering template within layouts/application
+Rendering wklysums/index
+Completed in 172ms (View: 156, DB: 0) | 200 OK [http://localhost/wklysums/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#index (for 127.0.0.1 at 2010-08-25 16:30:43) [GET]
+  [4;35;1mHome Load (0.0ms)[0m   [0mSELECT * FROM `homes` [0m
+Rendering template within layouts/homes
+Rendering homes/index
+Completed in 219ms (View: 203, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-25 16:30:44) [GET]
+
+ActionController::RoutingError (No route matches "/images/oval_office_list_icon_01.jpg" with {:method=>:get}):
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WklysumsController#index (for 127.0.0.1 at 2010-08-25 17:05:51) [GET]
+  [4;36;1mWklysum Load (0.0ms)[0m   [0;1mSELECT * FROM `wklysums` [0m
+Rendering template within layouts/application
+Rendering wklysums/index
+Completed in 359ms (View: 344, DB: 0) | 200 OK [http://localhost/wklysums]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WklysumsController#new (for 127.0.0.1 at 2010-08-25 17:05:54) [GET]
+Rendering template within layouts/application
+Rendering wklysums/new
+Completed in 390ms (View: 375, DB: 0) | 200 OK [http://localhost/wklysums/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WklysumsController#create (for 127.0.0.1 at 2010-08-25 17:10:55) [POST]
+  Parameters: {"authenticity_token"=>"Nh/RUIuvtavIhIX6lJaoW48kuXPz93QMIg06VurE2tA=", "wklysum"=>{"dateComposed(1i)"=>"2010", "dateComposed(2i)"=>"8", "dateComposed(3i)"=>"25", "content"=>"上午： 1.协调200项国外成品件文件检查。2.清理WRO清单。\r\n下午：清理行动项目清单，催促风险档案。"}, "commit"=>"新建"}
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO `wklysums` (`dateComposed`, `content`, `created_at`, `updated_at`) VALUES('2010-08-25', '上午： 1.协调200项国外成品件文件检查。2.清理WRO清单。\r\n下午：清理行动项目清单，催促风险档案。', '2010-08-25 09:10:55', '2010-08-25 09:10:55')[0m
+Redirected to http://localhost:8080/wklysums/23
+Completed in 78ms (DB: 0) | 302 Found [http://localhost/wklysums]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WklysumsController#show (for 127.0.0.1 at 2010-08-25 17:10:55) [GET]
+  Parameters: {"id"=>"23"}
+  [4;35;1mWklysum Load (0.0ms)[0m   [0mSELECT * FROM `wklysums` WHERE (`wklysums`.`id` = 23) [0m
+Rendering template within layouts/application
+Rendering wklysums/show
+Completed in 62ms (View: 31, DB: 0) | 200 OK [http://localhost/wklysums/23]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#index (for 127.0.0.1 at 2010-08-26 16:42:43) [GET]
+  [4;35;1mHome Load (0.0ms)[0m   [0mSELECT * FROM `homes` [0m
+Rendering template within layouts/homes
+Rendering homes/index
+Completed in 204ms (View: 188, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-26 16:42:43) [GET]
+
+ActionController::RoutingError (No route matches "/images/oval_office_list_icon_01.jpg" with {:method=>:get}):
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WklysumsController#index (for 127.0.0.1 at 2010-08-26 16:42:49) [GET]
+  [4;36;1mWklysum Load (188.0ms)[0m   [0;1mSELECT * FROM `wklysums` [0m
+Rendering template within layouts/application
+Rendering wklysums/index
+Completed in 531ms (View: 343, DB: 188) | 200 OK [http://localhost/wklysums]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WklysumsController#new (for 127.0.0.1 at 2010-08-26 16:42:53) [GET]
+Rendering template within layouts/application
+Rendering wklysums/new
+Completed in 250ms (View: 234, DB: 0) | 200 OK [http://localhost/wklysums/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WklysumsController#create (for 127.0.0.1 at 2010-08-26 16:47:54) [POST]
+  Parameters: {"authenticity_token"=>"KGFZXY8/8wmOfeMdxko6NtJZB+4WHfzmG+VhQp9+1QM=", "wklysum"=>{"dateComposed(1i)"=>"2010", "dateComposed(2i)"=>"8", "dateComposed(3i)"=>"26", "content"=>"上午：1.清理WRO清单。 2.起草风险管理计划书。3.预起草8月份新支线项目进展简报。\r\n下午：新支线项目分经理会。"}, "commit"=>"新建"}
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO `wklysums` (`dateComposed`, `content`, `created_at`, `updated_at`) VALUES('2010-08-26', '上午：1.清理WRO清单。 2.起草风险管理计划书。3.预起草8月份新支线项目进展简报。\r\n下午：新支线项目分经理会。', '2010-08-26 08:47:54', '2010-08-26 08:47:54')[0m
+Redirected to http://localhost:8080/wklysums/24
+Completed in 63ms (DB: 0) | 302 Found [http://localhost/wklysums]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WklysumsController#show (for 127.0.0.1 at 2010-08-26 16:47:54) [GET]
+  Parameters: {"id"=>"24"}
+  [4;35;1mWklysum Load (0.0ms)[0m   [0mSELECT * FROM `wklysums` WHERE (`wklysums`.`id` = 24) [0m
+Rendering template within layouts/application
+Rendering wklysums/show
+Completed in 63ms (View: 32, DB: 0) | 200 OK [http://localhost/wklysums/24]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WklysumsController#index (for 127.0.0.1 at 2010-08-26 16:47:57) [GET]
+  [4;35;1mWklysum Load (0.0ms)[0m   [0mSELECT * FROM `wklysums` [0m
+Rendering template within layouts/application
+Rendering wklysums/index
+Completed in 157ms (View: 157, DB: 0) | 200 OK [http://localhost/wklysums]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#index (for 127.0.0.1 at 2010-08-26 16:48:18) [GET]
+  [4;35;1mHome Load (0.0ms)[0m   [0mSELECT * FROM `homes` [0m
+Rendering template within layouts/homes
+Rendering homes/index
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/homes]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-26 16:48:18) [GET]
+
+ActionController::RoutingError (No route matches "/images/oval_office_list_icon_01.jpg" with {:method=>:get}):
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WklysumsController#index (for 127.0.0.1 at 2010-08-26 16:48:29) [GET]
+  [4;36;1mWklysum Load (15.0ms)[0m   [0;1mSELECT * FROM `wklysums` [0m
+Rendering template within layouts/application
+Rendering wklysums/index
+Completed in 156ms (View: 141, DB: 15) | 200 OK [http://localhost/wklysums]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WklysumsController#new (for 127.0.0.1 at 2010-08-26 16:48:31) [GET]
+Rendering template within layouts/application
+Rendering wklysums/new
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/wklysums/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#index (for 127.0.0.1 at 2010-08-27 16:30:42) [GET]
+  [4;35;1mHome Load (0.0ms)[0m   [0mSELECT * FROM `homes` [0m
+Rendering template within layouts/homes
+Rendering homes/index
+Completed in 344ms (View: 344, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-27 16:30:44) [GET]
+
+ActionController::RoutingError (No route matches "/images/oval_office_list_icon_01.jpg" with {:method=>:get}):
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#index (for 127.0.0.1 at 2010-08-27 16:43:08) [GET]
+  [4;36;1mHome Load (0.0ms)[0m   [0;1mSELECT * FROM `homes` [0m
+Rendering template within layouts/homes
+Rendering homes/index
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-27 16:43:08) [GET]
+
+ActionController::RoutingError (No route matches "/images/oval_office_list_icon_01.jpg" with {:method=>:get}):
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WklysumsController#index (for 127.0.0.1 at 2010-08-27 16:43:11) [GET]
+  [4;35;1mWklysum Load (31.0ms)[0m   [0mSELECT * FROM `wklysums` [0m
+Rendering template within layouts/application
+Rendering wklysums/index
+Completed in 375ms (View: 328, DB: 31) | 200 OK [http://localhost/wklysums]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WklysumsController#new (for 127.0.0.1 at 2010-08-27 16:43:14) [GET]
+Rendering template within layouts/application
+Rendering wklysums/new
+Completed in 266ms (View: 250, DB: 0) | 200 OK [http://localhost/wklysums/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WklysumsController#create (for 127.0.0.1 at 2010-08-27 16:52:20) [POST]
+  Parameters: {"authenticity_token"=>"AbIwzrS4fjkjaZvmxcVykJfCnImTgdzh2MQ9uLudDec=", "wklysum"=>{"dateComposed(1i)"=>"2010", "dateComposed(2i)"=>"8", "dateComposed(3i)"=>"27", "content"=>"上午：清理行动项目跟踪表\r\n\r\n下午：1.参加“关于发动机灭火瓶泄露事件”的双五归零培训事宜。2.参加关于400项成品件缺入库必要文件的会议。"}, "commit"=>"新建"}
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO `wklysums` (`dateComposed`, `content`, `created_at`, `updated_at`) VALUES('2010-08-27', '上午：清理行动项目跟踪表\r\n\r\n下午：1.参加“关于发动机灭火瓶泄露事件”的双五归零培训事宜。2.参加关于400项成品件缺入库必要文件的会议。', '2010-08-27 08:52:20', '2010-08-27 08:52:20')[0m
+Redirected to http://localhost:8080/wklysums/25
+Completed in 93ms (DB: 0) | 302 Found [http://localhost/wklysums]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WklysumsController#show (for 127.0.0.1 at 2010-08-27 16:52:20) [GET]
+  Parameters: {"id"=>"25"}
+  [4;36;1mWklysum Load (0.0ms)[0m   [0;1mSELECT * FROM `wklysums` WHERE (`wklysums`.`id` = 25) [0m
+Rendering template within layouts/application
+Rendering wklysums/show
+Completed in 78ms (View: 47, DB: 0) | 200 OK [http://localhost/wklysums/25]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#index (for 127.0.0.1 at 2010-08-31 16:39:33) [GET]
+  [4;35;1mHome Load (16.0ms)[0m   [0mSELECT * FROM `homes` [0m
+Rendering template within layouts/homes
+Rendering homes/index
+Completed in 266ms (View: 250, DB: 16) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 16:39:33) [GET]
+
+ActionController::RoutingError (No route matches "/images/oval_office_list_icon_01.jpg" with {:method=>:get}):
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WklysumsController#index (for 127.0.0.1 at 2010-08-31 16:58:28) [GET]
+  [4;36;1mWklysum Load (0.0ms)[0m   [0;1mSELECT * FROM `wklysums` [0m
+Rendering template within layouts/application
+Rendering wklysums/index
+Completed in 578ms (View: 563, DB: 0) | 200 OK [http://localhost/wklysums]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WklysumsController#new (for 127.0.0.1 at 2010-08-31 16:58:32) [GET]
+Rendering template within layouts/application
+Rendering wklysums/new
+Completed in 250ms (View: 234, DB: 0) | 200 OK [http://localhost/wklysums/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#index (for 127.0.0.1 at 2010-08-31 17:00:20) [GET]
+  [4;35;1mHome Load (0.0ms)[0m   [0mSELECT * FROM `homes` [0m
+Rendering template within layouts/homes
+Rendering homes/index
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/homes]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-31 17:00:20) [GET]
+
+ActionController::RoutingError (No route matches "/images/oval_office_list_icon_01.jpg" with {:method=>:get}):
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#index (for 127.0.0.1 at 2010-09-01 16:30:50) [GET]
+  [4;35;1mHome Load (47.0ms)[0m   [0mSELECT * FROM `homes` [0m
+Rendering template within layouts/homes
+Rendering homes/index
+Completed in 407ms (View: 344, DB: 47) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-01 16:30:52) [GET]
+
+ActionController::RoutingError (No route matches "/images/oval_office_list_icon_01.jpg" with {:method=>:get}):
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#index (for 127.0.0.1 at 2010-09-02 16:53:31) [GET]
+  [4;35;1mHome Load (0.0ms)[0m   [0mSELECT * FROM `homes` [0m
+Rendering template within layouts/homes
+Rendering homes/index
+Completed in 187ms (View: 171, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-02 16:53:31) [GET]
+
+ActionController::RoutingError (No route matches "/images/oval_office_list_icon_01.jpg" with {:method=>:get}):
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WklysumsController#index (for 127.0.0.1 at 2010-09-02 16:54:52) [GET]
+  [4;36;1mWklysum Load (31.0ms)[0m   [0;1mSELECT * FROM `wklysums` [0m
+Rendering template within layouts/application
+Rendering wklysums/index
+Completed in 422ms (View: 375, DB: 31) | 200 OK [http://localhost/wklysums]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WklysumsController#new (for 127.0.0.1 at 2010-09-02 16:54:59) [GET]
+Rendering template within layouts/application
+Rendering wklysums/new
+Completed in 219ms (View: 204, DB: 0) | 200 OK [http://localhost/wklysums/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WklysumsController#create (for 127.0.0.1 at 2010-09-02 17:25:55) [POST]
+  Parameters: {"authenticity_token"=>"lJ6lNFqOyOIM5HVcOEBghsh6Giwv5KraDdvH86hVS10=", "wklysum"=>{"dateComposed(1i)"=>"2010", "dateComposed(2i)"=>"9", "dateComposed(3i)"=>"2", "content"=>"上午：1.对400项难入库的成品件的会议纪要派发的任务进行协调分解与跟踪。 2.WRO中104架机非标地面设备的采购情况进行核查跟踪。 \r\n下午： 1.贺总到办公室，听取领导对简报修改建议并整理录音。 2.参加徐晓飞副总的关于库房呆滞件的处理会议。 3.协调项目运营部需向设计索要6份ATP文件事宜。 4. 检查首批53项文件检查成品件的质量文件是否齐全。"}, "commit"=>"新建"}
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO `wklysums` (`dateComposed`, `content`, `created_at`, `updated_at`) VALUES('2010-09-02', '上午：1.对400项难入库的成品件的会议纪要派发的任务进行协调分解与跟踪。 2.WRO中104架机非标地面设备的采购情况进行核查跟踪。 \r\n下午： 1.贺总到办公室，听取领导对简报修改建议并整理录音。 2.参加徐晓飞副总的关于库房呆滞件的处理会议。 3.协调项目运营部需向设计索要6份ATP文件事宜。 4. 检查首批53项文件检查成品件的质量文件是否齐全。', '2010-09-02 09:25:55', '2010-09-02 09:25:55')[0m
+Redirected to http://localhost:8080/wklysums/26
+Completed in 78ms (DB: 0) | 302 Found [http://localhost/wklysums]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WklysumsController#show (for 127.0.0.1 at 2010-09-02 17:25:55) [GET]
+  Parameters: {"id"=>"26"}
+  [4;35;1mWklysum Load (0.0ms)[0m   [0mSELECT * FROM `wklysums` WHERE (`wklysums`.`id` = 26) [0m
+Rendering template within layouts/application
+Rendering wklysums/show
+Completed in 62ms (View: 46, DB: 0) | 200 OK [http://localhost/wklysums/26]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WklysumsController#index (for 127.0.0.1 at 2010-09-02 17:25:58) [GET]
+  [4;35;1mWklysum Load (0.0ms)[0m   [0mSELECT * FROM `wklysums` [0m
+Rendering template within layouts/application
+Rendering wklysums/index
+Completed in 187ms (View: 172, DB: 0) | 200 OK [http://localhost/wklysums]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#index (for 127.0.0.1 at 2010-09-08 15:42:57) [GET]
+  [4;35;1mHome Load (16.0ms)[0m   [0mSELECT * FROM `homes` [0m
+Rendering template within layouts/homes
+Rendering homes/index
+Completed in 203ms (View: 187, DB: 16) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-08 15:42:57) [GET]
+
+ActionController::RoutingError (No route matches "/images/oval_office_list_icon_01.jpg" with {:method=>:get}):
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#index (for 127.0.0.1 at 2010-09-17 17:08:30) [GET]
+  [4;35;1mHome Load (31.0ms)[0m   [0mSELECT * FROM `homes` [0m
+Rendering template within layouts/homes
+Rendering homes/index
+Completed in 281ms (View: 234, DB: 31) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-17 17:08:31) [GET]
+
+ActionController::RoutingError (No route matches "/images/oval_office_list_icon_01.jpg" with {:method=>:get}):
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WklysumsController#index (for 127.0.0.1 at 2010-09-17 17:08:38) [GET]
+  [4;36;1mWklysum Load (31.0ms)[0m   [0;1mSELECT * FROM `wklysums` [0m
+Rendering template within layouts/application
+Rendering wklysums/index
+Completed in 406ms (View: 375, DB: 31) | 200 OK [http://localhost/wklysums]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WklysumsController#new (for 127.0.0.1 at 2010-09-17 17:08:42) [GET]
+Rendering template within layouts/application
+Rendering wklysums/new
+Completed in 250ms (View: 234, DB: 0) | 200 OK [http://localhost/wklysums/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WklysumsController#create (for 127.0.0.1 at 2010-09-17 17:27:06) [POST]
+  Parameters: {"authenticity_token"=>"V5EQYnUOzFd9jxWDe5LX2yQHkUxW/tGb/weN12kEZ08=", "wklysum"=>{"dateComposed(1i)"=>"2010", "dateComposed(2i)"=>"9", "dateComposed(3i)"=>"17", "content"=>"周小节： \r\n1. 周报改版工作，因第34周周报有较大幅度改版，按贺总要求，对已改版的周报进行再次调整。\r\n2. 参加110+架次成品件订单审批定稿工作，目前所有订单审稿工作已经完成。\r\n3. 参与成品件缺质量文件难入库事宜，目前尚余300余项成品件因缺种种缺质量文件无法入库。\r\n4. 参与谈判制造组与庞巴迪公司的谈判，整理谈判会议纪要。\r\n5. 参与与上飞院就预投产问题的清理工作，包括结构件无图件转有图件，采购多一份试飞保障备件，971HZ001/002文件的批复，ECP与EO时间差问题等等。\r\n6. 协调关于上飞公司成品件入厂接收检验课题中涉及测试用成品件的采购问题。"}, "commit"=>"新建"}
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO `wklysums` (`dateComposed`, `content`, `created_at`, `updated_at`) VALUES('2010-09-17', '周小节： \r\n1. 周报改版工作，因第34周周报有较大幅度改版，按贺总要求，对已改版的周报进行再次调整。\r\n2. 参加110+架次成品件订单审批定稿工作，目前所有订单审稿工作已经完成。\r\n3. 参与成品件缺质量文件难入库事宜，目前尚余300余项成品件因缺种种缺质量文件无法入库。\r\n4. 参与谈判制造组与庞巴迪公司的谈判，整理谈判会议纪要。\r\n5. 参与与上飞院就预投产问题的清理工作，包括结构件无图件转有图件，采购多一份试飞保障备件，971HZ001/002文件的批复，ECP与EO时间差问题等等。\r\n6. 协调关于上飞公司成品件入厂接收检验课题中涉及测试用成品件的采购问题。', '2010-09-17 09:27:06', '2010-09-17 09:27:06')[0m
+Redirected to http://localhost:8080/wklysums/27
+Completed in 63ms (DB: 0) | 302 Found [http://localhost/wklysums]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WklysumsController#show (for 127.0.0.1 at 2010-09-17 17:27:06) [GET]
+  Parameters: {"id"=>"27"}
+  [4;35;1mWklysum Load (0.0ms)[0m   [0mSELECT * FROM `wklysums` WHERE (`wklysums`.`id` = 27) [0m
+Rendering template within layouts/application
+Rendering wklysums/show
+Completed in 63ms (View: 32, DB: 0) | 200 OK [http://localhost/wklysums/27]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#index (for 127.0.0.1 at 2010-09-17 17:27:08) [GET]
+  [4;35;1mHome Load (0.0ms)[0m   [0mSELECT * FROM `homes` [0m
+Rendering template within layouts/homes
+Rendering homes/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/homes]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-17 17:27:09) [GET]
+
+ActionController::RoutingError (No route matches "/images/oval_office_list_icon_01.jpg" with {:method=>:get}):
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomesController#index (for 127.0.0.1 at 2010-09-19 11:27:59) [GET]
+  [4;35;1mHome Load (0.0ms)[0m   [0mSELECT * FROM `homes` [0m
+Rendering template within layouts/homes
+Rendering homes/index
+Completed in 312ms (View: 297, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-09-19 11:28:00) [GET]
+
+ActionController::RoutingError (No route matches "/images/oval_office_list_icon_01.jpg" with {:method=>:get}):
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  script\server:3
+
+Rendering rescues/layout (not_found)
+/!\ FAILSAFE /!\  Fri Dec 24 14:29:17 +0800 2010
+  Status: 500 Internal Server Error
+  The driver encountered an error: com.mysql.jdbc.CommunicationsException: Communications link failure due to underlying exception: 
+
+** BEGIN NESTED EXCEPTION ** 
+
+java.net.SocketException
+MESSAGE: java.net.ConnectException: Connection refused: connect
+
+STACKTRACE:
+
+java.net.SocketException: java.net.ConnectException: Connection refused: connect
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:156)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:276)
+	at com.mysql.jdbc.Connection.createNewIO(Connection.java:2666)
+	at com.mysql.jdbc.Connection.<init>(Connection.java:1531)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:266)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.jruby.javasupport.JavaMethod.invokeDirectWithExceptionHandling(JavaMethod.java:533)
+	at org.jruby.javasupport.JavaMethod.invokeDirect(JavaMethod.java:383)
+	at org.jruby.java.invokers.InstanceMethodInvoker.call(InstanceMethodInvoker.java:68)
+	at org.jruby.runtime.callsite.CachingCallSite.cacheAndCall(CachingCallSite.java:329)
+	at org.jruby.runtime.callsite.CachingCallSite.call(CachingCallSite.java:188)
+	at org.jruby.ast.CallTwoArgNode.interpret(CallTwoArgNode.java:59)
+	at org.jruby.ast.NewlineNode.interpret(NewlineNode.java:104)
+	at org.jruby.ast.BlockNode.interpret(BlockNode.java:71)
+	at org.jruby.ast.RescueBodyNode.interpret(RescueBodyNode.java:108)
+	at org.jruby.ast.RescueNode.handleException(RescueNode.java:164)
+	at org.jruby.ast.RescueNode.interpretWithJavaExceptions(RescueNode.java:121)
+	at org.jruby.ast.RescueNode.interpret(RescueNode.java:110)
+	at org.jruby.internal.runtime.methods.InterpretedMethod.call(InterpretedMethod.java:262)
+	at org.jruby.internal.runtime.methods.DefaultMethod.call(DefaultMethod.java:204)
+	at org.jruby.runtime.callsite.CachingCallSite.cacheAndCall(CachingCallSite.java:349)
+	at org.jruby.runtime.callsite.CachingCallSite.call(CachingCallSite.java:228)
+	at org.jruby.ast.CallThreeArgNode.interpret(CallThreeArgNode.java:61)
+	at org.jruby.ast.NewlineNode.interpret(NewlineNode.java:104)
+	at org.jruby.runtime.InterpretedBlock.evalBlockBody(InterpretedBlock.java:373)
+	at org.jruby.runtime.InterpretedBlock.yield(InterpretedBlock.java:327)
+	at org.jruby.runtime.InterpretedBlock.yield(InterpretedBlock.java:366)
+	at org.jruby.runtime.BlockBody.call(BlockBody.java:71)
+	at org.jruby.runtime.Block.call(Block.java:85)
+	at org.jruby.java.proxies.JavaInterfaceTemplate$11.call(JavaInterfaceTemplate.java:383)
+	at org.jruby.javasupport.util.RuntimeHelpers$MethodMissingMethod.call(RuntimeHelpers.java:401)
+	at anon_class18142818_758592902.newConnection(anon_class18142818_758592902.gen:13)
+	at jdbc_adapter.RubyJdbcConnection.reconnect(RubyJdbcConnection.java:423)
+	at jdbc_adapter.RubyJdbcConnection.connection(RubyJdbcConnection.java:171)
+	at jdbc_adapter.RubyJdbcConnection$i_method_0_0$RUBYINVOKER$connection.call(jdbc_adapter/RubyJdbcConnection$i_method_0_0$RUBYINVOKER$connection.gen:65535)
+	at org.jruby.runtime.callsite.CachingCallSite.cacheAndCall(CachingCallSite.java:289)
+	at org.jruby.runtime.callsite.CachingCallSite.call(CachingCallSite.java:108)
+	at org.jruby.ast.VCallNode.interpret(VCallNode.java:85)
+	at org.jruby.ast.NewlineNode.interpret(NewlineNode.java:104)
+	at org.jruby.ast.BlockNode.interpret(BlockNode.java:71)
+	at org.jruby.ast.RescueNode.executeBody(RescueNode.java:199)
+	at org.jruby.ast.RescueNode.interpretWithJavaExceptions(RescueNode.java:118)
+	at org.jruby.ast.RescueNode.interpret(RescueNode.java:110)
+	at org.jruby.internal.runtime.methods.InterpretedMethod.call(InterpretedMethod.java:201)
+	at org.jruby.internal.runtime.methods.DefaultMethod.call(DefaultMethod.java:180)
+	at org.jruby.runtime.callsite.CachingCallSite.cacheAndCall(CachingCallSite.java:319)
+	at org.jruby.runtime.callsite.CachingCallSite.callBlock(CachingCallSite.java:157)
+	at org.jruby.runtime.callsite.CachingCallSite.call(CachingCallSite.java:162)
+	at org.jruby.RubyClass$SpecificArityNew.call(RubyClass.java:804)
+	at org.jruby.internal.runtime.methods.DynamicMethod.call(DynamicMethod.java:186)
+	at org.jruby.runtime.callsite.CachingCallSite.cacheAndCall(CachingCallSite.java:309)
+	at org.jruby.runtime.callsite.CachingCallSite.call(CachingCallSite.java:148)
+	at org.jruby.ast.CallOneArgNode.interpret(CallOneArgNode.java:57)
+	at org.jruby.ast.LocalAsgnNode.interpret(LocalAsgnNode.java:123)
+	at org.jruby.ast.NewlineNode.interpret(NewlineNode.java:104)
+	at org.jruby.ast.BlockNode.interpret(BlockNode.java:71)
+	at org.jruby.ast.IfNode.interpret(IfNode.java:119)
+	at org.jruby.ast.NewlineNode.interpret(NewlineNode.java:104)
+	at org.jruby.ast.BlockNode.interpret(BlockNode.java:71)
+	at org.jruby.internal.runtime.methods.InterpretedMethod.call(InterpretedMethod.java:283)
+	at org.jruby.internal.runtime.methods.DefaultMethod.call(DefaultMethod.java:212)
+	at org.jruby.runtime.callsite.CachingCallSite.cacheAndCall(CachingCallSite.java:359)
+	at org.jruby.runtime.callsite.CachingCallSite.callBlock(CachingCallSite.java:237)
+	at org.jruby.runtime.callsite.CachingCallSite.call(CachingCallSite.java:242)
+	at org.jruby.RubyClass$SpecificArityNew.call(RubyClass.java:826)
+	at org.jruby.internal.runtime.methods.DynamicMethod.call(DynamicMethod.java:202)
+	at org.jruby.runtime.callsite.CachingCallSite.cacheAndCall(CachingCallSite.java:349)
+	at org.jruby.runtime.callsite.CachingCallSite.call(CachingCallSite.java:228)
+	at org.jruby.ast.CallThreeArgNode.interpret(CallThreeArgNode.java:61)
+	at org.jruby.ast.NewlineNode.interpret(NewlineNode.java:104)
+	at org.jruby.internal.runtime.methods.InterpretedMethod.call(InterpretedMethod.java:180)
+	at org.jruby.internal.runtime.methods.DefaultMethod.call(DefaultMethod.java:172)
+	at org.jruby.runtime.callsite.CachingCallSite.cacheAndCall(CachingCallSite.java:309)
+	at org.jruby.runtime.callsite.CachingCallSite.call(CachingCallSite.java:148)
+	at org.jruby.ast.FCallOneArgNode.interpret(FCallOneArgNode.java:36)
+	at org.jruby.ast.LocalAsgnNode.interpret(LocalAsgnNode.java:123)
+	at org.jruby.ast.NewlineNode.interpret(NewlineNode.java:104)
+	at org.jruby.ast.BlockNode.interpret(BlockNode.java:71)
+	at org.jruby.internal.runtime.methods.InterpretedMethod.call(InterpretedMethod.java:201)
+	at org.jruby.internal.runtime.methods.DefaultMethod.call(DefaultMethod.java:180)
+	at org.jruby.internal.runtime.methods.AliasMethod.call(AliasMethod.java:86)
+	at org.jruby.RubyClass.finvoke(RubyClass.java:542)
+	at org.jruby.RubyObject.send(RubyObject.java:1443)
+	at org.jruby.RubyObject$i_method_multi$RUBYINVOKER$send.call(org/jruby/RubyObject$i_method_multi$RUBYINVOKER$send.gen:65535)
+	at org.jruby.internal.runtime.methods.JavaMethod$JavaMethodZeroOrOneOrTwoOrNBlock.call(JavaMethod.java:283)
+	at org.jruby.runtime.callsite.CachingCallSite.cacheAndCall(CachingCallSite.java:329)
+	at org.jruby.runtime.callsite.CachingCallSite.call(CachingCallSite.java:188)
+	at org.jruby.ast.CallTwoArgNode.interpret(CallTwoArgNode.java:59)
+	at org.jruby.ast.NewlineNode.interpret(NewlineNode.java:104)
+	at org.jruby.internal.runtime.methods.InterpretedMethod.call(InterpretedMethod.java:139)
+	at org.jruby.internal.runtime.methods.DefaultMethod.call(DefaultMethod.java:156)
+	at org.jruby.runtime.callsite.CachingCallSite.cacheAndCall(CachingCallSite.java:289)
+	at org.jruby.runtime.callsite.CachingCallSite.call(CachingCallSite.java:108)
+	at org.jruby.ast.VCallNode.interpret(VCallNode.java:85)
+	at org.jruby.ast.LocalAsgnNode.interpret(LocalAsgnNode.java:123)
+	at org.jruby.ast.NewlineNode.interpret(NewlineNode.java:104)
+	at org.jruby.ast.BlockNode.interpret(BlockNode.java:71)
+	at org.jruby.internal.runtime.methods.InterpretedMethod.call(InterpretedMethod.java:139)
+	at org.jruby.internal.runtime.methods.DefaultMethod.call(DefaultMethod.java:156)
+	at org.jruby.runtime.callsite.CachingCallSite.cacheAndCall(CachingCallSite.java:289)
+	at org.jruby.runtime.callsite.CachingCallSite.call(CachingCallSite.java:108)
+	at org.jruby.ast.VCallNode.interpret(VCallNode.java:85)
+	at org.jruby.ast.NewlineNode.interpret(NewlineNode.java:104)
+	at org.jruby.ast.IfNode.interpret(IfNode.java:117)
+	at org.jruby.ast.IfNode.interpret(IfNode.java:119)
+	at org.jruby.ast.DAsgnNode.interpret(DAsgnNode.java:110)
+	at org.jruby.ast.NewlineNode.interpret(NewlineNode.java:104)
+	at org.jruby.ast.BlockNode.interpret(BlockNode.java:71)
+	at org.jruby.runtime.InterpretedBlock.evalBlockBody(InterpretedBlock.java:373)
+	at org.jruby.runtime.InterpretedBlock.yield(InterpretedBlock.java:346)
+	at org.jruby.runtime.InterpretedBlock.yield(InterpretedBlock.java:303)
+	at org.jruby.runtime.Block.yield(Block.java:194)
+	at org.jruby.RubyKernel.loop_1_9(RubyKernel.java:1251)
+	at org.jruby.RubyKernel$s_method_0_0$RUBYFRAMEDINVOKER$loop_1_9.call(org/jruby/RubyKernel$s_method_0_0$RUBYFRAMEDINVOKER$loop_1_9.gen:65535)
+	at org.jruby.runtime.callsite.CachingCallSite.cacheAndCall(CachingCallSite.java:299)
+	at org.jruby.runtime.callsite.CachingCallSite.callBlock(CachingCallSite.java:117)
+	at org.jruby.runtime.callsite.CachingCallSite.callIter(CachingCallSite.java:132)
+	at org.jruby.ast.FCallNoArgBlockNode.interpret(FCallNoArgBlockNode.java:32)
+	at org.jruby.ast.NewlineNode.interpret(NewlineNode.java:104)
+	at org.jruby.runtime.InterpretedBlock.evalBlockBody(InterpretedBlock.java:373)
+	at org.jruby.runtime.InterpretedBlock.yield(InterpretedBlock.java:294)
+	at org.jruby.runtime.InterpretedBlock.yieldSpecific(InterpretedBlock.java:228)
+	at org.jruby.runtime.Block.yieldSpecific(Block.java:99)
+	at org.jruby.ast.ZYieldNode.interpret(ZYieldNode.java:25)
+	at org.jruby.ast.NewlineNode.interpret(NewlineNode.java:104)
+	at org.jruby.ast.EnsureNode.interpret(EnsureNode.java:96)
+	at org.jruby.ast.BeginNode.interpret(BeginNode.java:83)
+	at org.jruby.ast.NewlineNode.interpret(NewlineNode.java:104)
+	at org.jruby.ast.BlockNode.interpret(BlockNode.java:71)
+	at org.jruby.internal.runtime.methods.InterpretedMethod.call(InterpretedMethod.java:160)
+	at org.jruby.internal.runtime.methods.DefaultMethod.call(DefaultMethod.java:164)
+	at org.jruby.internal.runtime.methods.AliasMethod.call(AliasMethod.java:81)
+	at org.jruby.runtime.callsite.CachingCallSite.cacheAndCall(CachingCallSite.java:299)
+	at org.jruby.runtime.callsite.CachingCallSite.callBlock(CachingCallSite.java:117)
+	at org.jruby.runtime.callsite.CachingCallSite.call(CachingCallSite.java:122)
+	at org.jruby.ast.CallNoArgBlockNode.interpret(CallNoArgBlockNode.java:64)
+	at org.jruby.ast.NewlineNode.interpret(NewlineNode.java:104)
+	at org.jruby.internal.runtime.methods.InterpretedMethod.call(InterpretedMethod.java:139)
+	at org.jruby.internal.runtime.methods.DefaultMethod.call(DefaultMethod.java:156)
+	at org.jruby.runtime.callsite.CachingCallSite.cacheAndCall(CachingCallSite.java:289)
+	at org.jruby.runtime.callsite.CachingCallSite.call(CachingCallSite.java:108)
+	at org.jruby.ast.VCallNode.interpret(VCallNode.java:85)
+	at org.jruby.ast.AttrAssignTwoArgNode.interpret(AttrAssignTwoArgNode.java:36)
+	at org.jruby.ast.NewlineNode.interpret(NewlineNode.java:104)
+	at org.jruby.ast.IfNode.interpret(IfNode.java:119)
+	at org.jruby.ast.NewlineNode.interpret(NewlineNode.java:104)
+	at org.jruby.internal.runtime.methods.InterpretedMethod.call(InterpretedMethod.java:139)
+	at org.jruby.internal.runtime.methods.DefaultMethod.call(DefaultMethod.java:156)
+	at org.jruby.runtime.callsite.CachingCallSite.cacheAndCall(CachingCallSite.java:289)
+	at org.jruby.runtime.callsite.CachingCallSite.call(CachingCallSite.java:108)
+	at org.jruby.ast.CallNoArgNode.interpret(CallNoArgNode.java:61)
+	at org.jruby.ast.AndNode.interpret(AndNode.java:94)
+	at org.jruby.ast.NewlineNode.interpret(NewlineNode.java:104)
+	at org.jruby.ast.OrNode.interpret(OrNode.java:94)
+	at org.jruby.ast.NewlineNode.interpret(NewlineNode.java:104)
+	at org.jruby.ast.BlockNode.interpret(BlockNode.java:71)
+	at org.jruby.internal.runtime.methods.InterpretedMethod.call(InterpretedMethod.java:180)
+	at org.jruby.internal.runtime.methods.DefaultMethod.call(DefaultMethod.java:172)
+	at org.jruby.runtime.callsite.CachingCallSite.cacheAndCall(CachingCallSite.java:309)
+	at org.jruby.runtime.callsite.CachingCallSite.call(CachingCallSite.java:148)
+	at org.jruby.ast.CallOneArgNode.interpret(CallOneArgNode.java:57)
+	at org.jruby.ast.NewlineNode.interpret(NewlineNode.java:104)
+	at org.jruby.internal.runtime.methods.InterpretedMethod.call(InterpretedMethod.java:139)
+	at org.jruby.internal.runtime.methods.DefaultMethod.call(DefaultMethod.java:156)
+	at org.jruby.runtime.callsite.CachingCallSite.cacheAndCall(CachingCallSite.java:289)
+	at org.jruby.runtime.callsite.CachingCallSite.call(CachingCallSite.java:108)
+	at org.jruby.ast.VCallNode.interpret(VCallNode.java:85)
+	at org.jruby.ast.NewlineNode.interpret(NewlineNode.java:104)
+	at org.jruby.internal.runtime.methods.InterpretedMethod.call(InterpretedMethod.java:139)
+	at org.jruby.internal.runtime.methods.DefaultMethod.call(DefaultMethod.java:156)
+	at org.jruby.runtime.callsite.CachingCallSite.cacheAndCall(CachingCallSite.java:289)
+	at org.jruby.runtime.callsite.CachingCallSite.call(CachingCallSite.java:108)
+	at org.jruby.ast.VCallNode.interpret(VCallNode.java:85)
+	at org.jruby.ast.CallNoArgBlockPassNode.interpret(CallNoArgBlockPassNode.java:53)
+	at org.jruby.ast.NewlineNode.interpret(NewlineNode.java:104)
+	at org.jruby.ast.IfNode.interpret(IfNode.java:119)
+	at org.jruby.ast.NewlineNode.interpret(NewlineNode.java:104)
+	at org.jruby.internal.runtime.methods.InterpretedMethod.call(InterpretedMethod.java:160)
+	at org.jruby.internal.runtime.methods.DefaultMethod.call(DefaultMethod.java:164)
+	at org.jruby.runtime.callsite.CachingCallSite.cacheAndCall(CachingCallSite.java:299)
+	at org.jruby.runtime.callsite.CachingCallSite.callBlock(CachingCallSite.java:117)
+	at org.jruby.runtime.callsite.CachingCallSite.call(CachingCallSite.java:122)
+	at org.jruby.ast.CallNoArgBlockNode.interpret(CallNoArgBlockNode.java:64)
+	at org.jruby.ast.NewlineNode.interpret(NewlineNode.java:104)
+	at org.jruby.internal.runtime.methods.InterpretedMethod.call(InterpretedMethod.java:180)
+	at org.jruby.internal.runtime.methods.DefaultMethod.call(DefaultMethod.java:172)
+	at org.jruby.runtime.callsite.CachingCallSite.cacheAndCall(CachingCallSite.java:309)
+	at org.jruby.runtime.callsite.CachingCallSite.call(CachingCallSite.java:148)
+	at org.jruby.ast.CallOneArgNode.interpret(CallOneArgNode.java:57)
+	at org.jruby.ast.NewlineNode.interpret(NewlineNode.java:104)
+	at org.jruby.ast.EnsureNode.interpret(EnsureNode.java:96)
+	at org.jruby.internal.runtime.methods.InterpretedMethod.call(InterpretedMethod.java:180)
+	at org.jruby.internal.runtime.methods.DefaultMethod.call(DefaultMethod.java:172)
+	at org.jruby.runtime.callsite.CachingCallSite.cacheAndCall(CachingCallSite.java:309)
+	at org.jruby.runtime.callsite.CachingCallSite.call(CachingCallSite.java:148)
+	at org.jruby.ast.CallOneArgNode.interpret(CallOneArgNode.java:57)
+	at org.jruby.ast.ToAryNode.interpret(ToAryNode.java:69)
+	at org.jruby.ast.MultipleAsgnNode.interpret(MultipleAsgnNode.java:127)
+	at org.jruby.ast.NewlineNode.interpret(NewlineNode.java:104)
+	at org.jruby.ast.BlockNode.interpret(BlockNode.java:71)
+	at org.jruby.internal.runtime.methods.InterpretedMethod.call(InterpretedMethod.java:180)
+	at org.jruby.internal.runtime.methods.DefaultMethod.call(DefaultMethod.java:172)
+	at org.jruby.runtime.callsite.CachingCallSite.cacheAndCall(CachingCallSite.java:309)
+	at org.jruby.runtime.callsite.CachingCallSite.call(CachingCallSite.java:148)
+	at org.jruby.ast.CallOneArgNode.interpret(CallOneArgNode.java:57)
+	at org.jruby.ast.NewlineNode.interpret(NewlineNode.java:104)
+	at org.jruby.ast.BlockNode.interpret(BlockNode.java:71)
+	at org.jruby.internal.runtime.methods.InterpretedMethod.call(InterpretedMethod.java:180)
+	at org.jruby.internal.runtime.methods.DefaultMethod.call(DefaultMethod.java:172)
+	at org.jruby.runtime.callsite.CachingCallSite.cacheAndCall(CachingCallSite.java:309)
+	at org.jruby.runtime.callsite.CachingCallSite.call(CachingCallSite.java:148)
+	at org.jruby.ast.CallOneArgNode.interpret(CallOneArgNode.java:57)
+	at org.jruby.ast.NewlineNode.interpret(NewlineNode.java:104)
+	at org.jruby.ast.BlockNode.interpret(BlockNode.java:71)
+	at org.jruby.internal.runtime.methods.InterpretedMethod.call(InterpretedMethod.java:180)
+	at org.jruby.internal.runtime.methods.DefaultMethod.call(DefaultMethod.java:172)
+	at org.jruby.runtime.callsite.CachingCallSite.cacheAndCall(CachingCallSite.java:309)
+	at org.jruby.runtime.callsite.CachingCallSite.call(CachingCallSite.java:148)
+	at org.jruby.ast.CallOneArgNode.interpret(CallOneArgNode.java:57)
+	at org.jruby.ast.ToAryNode.interpret(ToAryNode.java:69)
+	at org.jruby.ast.MultipleAsgnNode.interpret(MultipleAsgnNode.java:127)
+	at org.jruby.ast.NewlineNode.interpret(NewlineNode.java:104)
+	at org.jruby.ast.BlockNode.interpret(BlockNode.java:71)
+	at org.jruby.internal.runtime.methods.InterpretedMethod.call(InterpretedMethod.java:180)
+	at org.jruby.internal.runtime.methods.DefaultMethod.call(DefaultMethod.java:172)
+	at org.jruby.runtime.callsite.CachingCallSite.cacheAndCall(CachingCallSite.java:309)
+	at org.jruby.runtime.callsite.CachingCallSite.call(CachingCallSite.java:148)
+	at org.jruby.ast.CallOneArgNode.interpret(CallOneArgNode.java:57)
+	at org.jruby.ast.NewlineNode.interpret(NewlineNode.java:104)
+	at org.jruby.ast.RescueNode.executeBody(RescueNode.java:199)
+	at org.jruby.ast.RescueNode.interpretWithJavaExceptions(RescueNode.java:118)
+	at org.jruby.ast.RescueNode.interpret(RescueNode.java:110)
+	at org.jruby.internal.runtime.methods.InterpretedMethod.call(InterpretedMethod.java:180)
+	at org.jruby.internal.runtime.methods.DefaultMethod.call(DefaultMethod.java:172)
+	at org.jruby.runtime.callsite.CachingCallSite.cacheAndCall(CachingCallSite.java:309)
+	at org.jruby.runtime.callsite.CachingCallSite.call(CachingCallSite.java:148)
+	at org.jruby.ast.CallOneArgNode.interpret(CallOneArgNode.java:57)
+	at org.jruby.ast.NewlineNode.interpret(NewlineNode.java:104)
+	at org.jruby.runtime.InterpretedBlock.evalBlockBody(InterpretedBlock.java:373)
+	at org.jruby.runtime.InterpretedBlock.yield(InterpretedBlock.java:346)
+	at org.jruby.runtime.InterpretedBlock.yield(InterpretedBlock.java:303)
+	at org.jruby.runtime.Block.yield(Block.java:194)
+	at org.jruby.libraries.ThreadLibrary$Mutex.synchronize(ThreadLibrary.java:195)
+	at org.jruby.libraries.ThreadLibrary$Mutex$i_method_0_0$RUBYINVOKER$synchronize.call(org/jruby/libraries/ThreadLibrary$Mutex$i_method_0_0$RUBYINVOKER$synchronize.gen:65535)
+	at org.jruby.runtime.callsite.CachingCallSite.cacheAndCall(CachingCallSite.java:299)
+	at org.jruby.runtime.callsite.CachingCallSite.callBlock(CachingCallSite.java:117)
+	at org.jruby.runtime.callsite.CachingCallSite.call(CachingCallSite.java:122)
+	at org.jruby.ast.CallNoArgBlockNode.interpret(CallNoArgBlockNode.java:64)
+	at org.jruby.ast.NewlineNode.interpret(NewlineNode.java:104)
+	at org.jruby.ast.BlockNode.interpret(BlockNode.java:71)
+	at org.jruby.ast.EnsureNode.interpret(EnsureNode.java:96)
+	at org.jruby.internal.runtime.methods.InterpretedMethod.call(InterpretedMethod.java:180)
+	at org.jruby.internal.runtime.methods.DefaultMethod.call(DefaultMethod.java:172)
+	at org.jruby.runtime.callsite.CachingCallSite.cacheAndCall(CachingCallSite.java:309)
+	at org.jruby.runtime.callsite.CachingCallSite.call(CachingCallSite.java:148)
+	at org.jruby.ast.CallOneArgNode.interpret(CallOneArgNode.java:57)
+	at org.jruby.ast.NewlineNode.interpret(NewlineNode.java:104)
+	at org.jruby.ast.BlockNode.interpret(BlockNode.java:71)
+	at org.jruby.runtime.InterpretedBlock.evalBlockBody(InterpretedBlock.java:373)
+	at org.jruby.runtime.InterpretedBlock.yield(InterpretedBlock.java:294)
+	at org.jruby.runtime.InterpretedBlock.yieldSpecific(InterpretedBlock.java:228)
+	at org.jruby.runtime.Block.yieldSpecific(Block.java:99)
+	at org.jruby.ast.ZYieldNode.interpret(ZYieldNode.java:25)
+	at org.jruby.ast.ToAryNode.interpret(ToAryNode.java:69)
+	at org.jruby.ast.MultipleAsgnNode.interpret(MultipleAsgnNode.java:127)
+	at org.jruby.ast.NewlineNode.interpret(NewlineNode.java:104)
+	at org.jruby.ast.BlockNode.interpret(BlockNode.java:71)
+	at org.jruby.ast.RescueNode.executeBody(RescueNode.java:199)
+	at org.jruby.ast.RescueNode.interpretWithJavaExceptions(RescueNode.java:118)
+	at org.jruby.ast.RescueNode.interpret(RescueNode.java:110)
+	at org.jruby.ast.BeginNode.interpret(BeginNode.java:83)
+	at org.jruby.ast.NewlineNode.interpret(NewlineNode.java:104)
+	at org.jruby.ast.BlockNode.interpret(BlockNode.java:71)
+	at org.jruby.internal.runtime.methods.InterpretedMethod.call(InterpretedMethod.java:160)
+	at org.jruby.internal.runtime.methods.DefaultMethod.call(DefaultMethod.java:164)
+	at org.jruby.runtime.callsite.CachingCallSite.cacheAndCall(CachingCallSite.java:299)
+	at org.jruby.runtime.callsite.CachingCallSite.callBlock(CachingCallSite.java:117)
+	at org.jruby.runtime.callsite.CachingCallSite.call(CachingCallSite.java:122)
+	at org.jruby.ast.CallNoArgBlockNode.interpret(CallNoArgBlockNode.java:64)
+	at org.jruby.ast.NewlineNode.interpret(NewlineNode.java:104)
+	at org.jruby.ast.IfNode.interpret(IfNode.java:119)
+	at org.jruby.ast.NewlineNode.interpret(NewlineNode.java:104)
+	at org.jruby.internal.runtime.methods.InterpretedMethod.call(InterpretedMethod.java:180)
+	at org.jruby.internal.runtime.methods.DefaultMethod.call(DefaultMethod.java:172)
+	at org.jruby.runtime.callsite.CachingCallSite.cacheAndCall(CachingCallSite.java:309)
+	at org.jruby.runtime.callsite.CachingCallSite.call(CachingCallSite.java:148)
+	at org.jruby.ast.CallOneArgNode.interpret(CallOneArgNode.java:57)
+	at org.jruby.ast.NewlineNode.interpret(NewlineNode.java:104)
+	at org.jruby.ast.BlockNode.interpret(BlockNode.java:71)
+	at org.jruby.internal.runtime.methods.InterpretedMethod.call(InterpretedMethod.java:180)
+	at org.jruby.internal.runtime.methods.DefaultMethod.call(DefaultMethod.java:172)
+	at org.jruby.runtime.callsite.CachingCallSite.cacheAndCall(CachingCallSite.java:309)
+	at org.jruby.runtime.callsite.CachingCallSite.call(CachingCallSite.java:148)
+	at org.jruby.ast.CallOneArgNode.interpret(CallOneArgNode.java:57)
+	at org.jruby.ast.ReturnNode.interpret(ReturnNode.java:92)
+	at org.jruby.ast.NewlineNode.interpret(NewlineNode.java:104)
+	at org.jruby.ast.BlockNode.interpret(BlockNode.java:71)
+	at org.jruby.runtime.InterpretedBlock.evalBlockBody(InterpretedBlock.java:373)
+	at org.jruby.runtime.InterpretedBlock.yield(InterpretedBlock.java:346)
+	at org.jruby.runtime.InterpretedBlock.yield(InterpretedBlock.java:303)
+	at org.jruby.runtime.Block.yield(Block.java:194)
+	at org.jruby.RubyArray.eachCommon(RubyArray.java:1630)
+	at org.jruby.RubyArray.each(RubyArray.java:1637)
+	at org.jruby.RubyArray$i_method_0_0$RUBYFRAMEDINVOKER$each.call(org/jruby/RubyArray$i_method_0_0$RUBYFRAMEDINVOKER$each.gen:65535)
+	at org.jruby.runtime.callsite.CachingCallSite.cacheAndCall(CachingCallSite.java:299)
+	at org.jruby.runtime.callsite.CachingCallSite.callBlock(CachingCallSite.java:117)
+	at org.jruby.runtime.callsite.CachingCallSite.call(CachingCallSite.java:122)
+	at org.jruby.ast.CallNoArgBlockNode.interpret(CallNoArgBlockNode.java:64)
+	at org.jruby.ast.NewlineNode.interpret(NewlineNode.java:104)
+	at org.jruby.ast.BlockNode.interpret(BlockNode.java:71)
+	at org.jruby.internal.runtime.methods.InterpretedMethod.call(InterpretedMethod.java:180)
+	at org.jruby.internal.runtime.methods.DefaultMethod.call(DefaultMethod.java:172)
+	at org.jruby.runtime.callsite.CachingCallSite.cacheAndCall(CachingCallSite.java:309)
+	at org.jruby.runtime.callsite.CachingCallSite.call(CachingCallSite.java:148)
+	at org.jruby.ast.CallOneArgNode.interpret(CallOneArgNode.java:57)
+	at org.jruby.ast.LocalAsgnNode.interpret(LocalAsgnNode.java:123)
+	at org.jruby.ast.NewlineNode.interpret(NewlineNode.java:104)
+	at org.jruby.ast.BlockNode.interpret(BlockNode.java:71)
+	at org.jruby.internal.runtime.methods.InterpretedMethod.call(InterpretedMethod.java:180)
+	at org.jruby.internal.runtime.methods.DefaultMethod.call(DefaultMethod.java:172)
+	at org.jruby.runtime.callsite.CachingCallSite.cacheAndCall(CachingCallSite.java:309)
+	at org.jruby.runtime.callsite.CachingCallSite.call(CachingCallSite.java:148)
+	at org.jruby.ast.CallOneArgNode.interpret(CallOneArgNode.java:57)
+	at org.jruby.ast.ToAryNode.interpret(ToAryNode.java:69)
+	at org.jruby.ast.MultipleAsgnNode.interpret(MultipleAsgnNode.java:127)
+	at org.jruby.ast.NewlineNode.interpret(NewlineNode.java:104)
+	at org.jruby.ast.BlockNode.interpret(BlockNode.java:71)
+	at org.jruby.internal.runtime.methods.InterpretedMethod.call(InterpretedMethod.java:180)
+	at org.jruby.internal.runtime.methods.DefaultMethod.call(DefaultMethod.java:172)
+	at org.jruby.runtime.callsite.CachingCallSite.cacheAndCall(CachingCallSite.java:309)
+	at org.jruby.runtime.callsite.CachingCallSite.call(CachingCallSite.java:148)
+	at org.jruby.ast.CallOneArgNode.interpret(CallOneArgNode.java:57)
+	at org.jruby.ast.ToAryNode.interpret(ToAryNode.java:69)
+	at org.jruby.ast.MultipleAsgnNode.interpret(MultipleAsgnNode.java:127)
+	at org.jruby.ast.NewlineNode.interpret(NewlineNode.java:104)
+	at org.jruby.ast.BlockNode.interpret(BlockNode.java:71)
+	at org.jruby.internal.runtime.methods.InterpretedMethod.call(InterpretedMethod.java:221)
+	at org.jruby.internal.runtime.methods.DefaultMethod.call(DefaultMethod.java:188)
+	at org.jruby.runtime.callsite.CachingCallSite.cacheAndCall(CachingCallSite.java:329)
+	at org.jruby.runtime.callsite.CachingCallSite.call(CachingCallSite.java:188)
+	at org.jruby.ast.CallTwoArgNode.interpret(CallTwoArgNode.java:59)
+	at org.jruby.ast.NewlineNode.interpret(NewlineNode.java:104)
+	at org.jruby.ast.BlockNode.interpret(BlockNode.java:71)
+	at org.jruby.internal.runtime.methods.InterpretedMethod.call(InterpretedMethod.java:221)
+	at org.jruby.internal.runtime.methods.DefaultMethod.call(DefaultMethod.java:188)
+	at org.jruby.runtime.callsite.CachingCallSite.cacheAndCall(CachingCallSite.java:329)
+	at org.jruby.runtime.callsite.CachingCallSite.call(CachingCallSite.java:188)
+	at org.jruby.ast.CallTwoArgNode.interpret(CallTwoArgNode.java:59)
+	at org.jruby.ast.NewlineNode.interpret(NewlineNode.java:104)
+	at org.jruby.ast.BlockNode.interpret(BlockNode.java:71)
+	at org.jruby.ast.RescueNode.executeBody(RescueNode.java:199)
+	at org.jruby.ast.RescueNode.interpretWithJavaExceptions(RescueNode.java:118)
+	at org.jruby.ast.RescueNode.interpret(RescueNode.java:110)
+	at org.jruby.ast.EnsureNode.interpret(EnsureNode.java:96)
+	at org.jruby.ast.BeginNode.interpret(BeginNode.java:83)
+	at org.jruby.ast.NewlineNode.interpret(NewlineNode.java:104)
+	at org.jruby.ast.BlockNode.interpret(BlockNode.java:71)
+	at org.jruby.ast.WhileNode.interpret(WhileNode.java:131)
+	at org.jruby.ast.NewlineNode.interpret(NewlineNode.java:104)
+	at org.jruby.internal.runtime.methods.InterpretedMethod.call(InterpretedMethod.java:180)
+	at org.jruby.internal.runtime.methods.DefaultMethod.call(DefaultMethod.java:172)
+	at org.jruby.runtime.callsite.CachingCallSite.cacheAndCall(CachingCallSite.java:309)
+	at org.jruby.runtime.callsite.CachingCallSite.call(CachingCallSite.java:148)
+	at org.jruby.ast.FCallOneArgNode.interpret(FCallOneArgNode.java:36)
+	at org.jruby.ast.IfNode.interpret(IfNode.java:119)
+	at org.jruby.ast.NewlineNode.interpret(NewlineNode.java:104)
+	at org.jruby.ast.BlockNode.interpret(BlockNode.java:71)
+	at org.jruby.ast.RescueNode.executeBody(RescueNode.java:199)
+	at org.jruby.ast.RescueNode.interpretWithJavaExceptions(RescueNode.java:118)
+	at org.jruby.ast.RescueNode.interpret(RescueNode.java:110)
+	at org.jruby.ast.EnsureNode.interpret(EnsureNode.java:96)
+	at org.jruby.ast.BeginNode.interpret(BeginNode.java:83)
+	at org.jruby.ast.NewlineNode.interpret(NewlineNode.java:104)
+	at org.jruby.runtime.InterpretedBlock.evalBlockBody(InterpretedBlock.java:373)
+	at org.jruby.runtime.InterpretedBlock.yield(InterpretedBlock.java:327)
+	at org.jruby.runtime.BlockBody.call(BlockBody.java:78)
+	at org.jruby.runtime.Block.call(Block.java:89)
+	at org.jruby.RubyProc.call(RubyProc.java:224)
+	at org.jruby.RubyProc.call(RubyProc.java:207)
+	at org.jruby.internal.runtime.RubyRunnable.run(RubyRunnable.java:94)
+	at java.lang.Thread.run(Thread.java:619)
+
+
+** END NESTED EXCEPTION **
+
+
+
+Last packet sent to the server was 15 ms ago.
+    D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/gems/1.8/gems/activerecord-jdbc-adapter-0.9.2/lib/active_record/connection_adapters/jdbc_adapter.rb:326:in `initialize'
+    D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/gems/1.8/gems/activerecord-jdbc-adapter-0.9.2/lib/active_record/connection_adapters/jdbc_adapter.rb:453:in `new'
+    D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/gems/1.8/gems/activerecord-jdbc-adapter-0.9.2/lib/active_record/connection_adapters/jdbc_adapter.rb:453:in `initialize'
+    D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/gems/1.8/gems/activerecord-jdbc-adapter-0.9.2/lib/active_record/connection_adapters/jdbc_adapter.rb:49:in `new'
+    D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/gems/1.8/gems/activerecord-jdbc-adapter-0.9.2/lib/active_record/connection_adapters/jdbc_adapter.rb:49:in `jdbc_connection'
+    D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/gems/1.8/gems/activerecord-jdbc-adapter-0.9.2/lib/jdbc_adapter/jdbc_mysql.rb:21:in `mysql_connection'
+    D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `checkout'
+    D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `checkout'
+    D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/monitor.rb:191:in `mon_synchronize'
+    D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:9:in `cache'
+    D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:28:in `call'
+    D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+    D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+    D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/params_parser.rb:15:in `call'
+    D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/session/cookie_store.rb:93:in `call'
+    D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/failsafe.rb:26:in `call'
+    D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+    D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:114:in `call'
+    D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/reloader.rb:34:in `run'
+    D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:108:in `call'
+    D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/gems/1.8/gems/rails-2.3.4/lib/rails/rack/static.rb:31:in `call'
+    D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:48:in `call'
+    D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `each'
+    D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `call'
+    D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/gems/1.8/gems/rails-2.3.4/lib/rails/rack/log_tailer.rb:17:in `call'
+    D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+    D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/webrick.rb:46:in `service'
+    D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/webrick.rb:13:in `run'
+    D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/gems/1.8/gems/rails-2.3.4/lib/commands/server.rb:111
+    D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/gems/1.8/gems/rails-2.3.4/lib/commands/server.rb:31:in `require'
+    D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script\server:3
+/!\ FAILSAFE /!\  Fri Dec 24 14:29:56 +0800 2010
+  Status: 500 Internal Server Error
+  The driver encountered an error: com.mysql.jdbc.CommunicationsException: Communications link failure due to underlying exception: 
+
+** BEGIN NESTED EXCEPTION ** 
+
+java.net.SocketException
+MESSAGE: java.net.ConnectException: Connection refused: connect
+
+STACKTRACE:
+
+java.net.SocketException: java.net.ConnectException: Connection refused: connect
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:156)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:276)
+	at com.mysql.jdbc.Connection.createNewIO(Connection.java:2666)
+	at com.mysql.jdbc.Connection.<init>(Connection.java:1531)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:266)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.jruby.javasupport.JavaMethod.invokeDirectWithExceptionHandling(JavaMethod.java:533)
+	at org.jruby.javasupport.JavaMethod.invokeDirect(JavaMethod.java:383)
+	at org.jruby.java.invokers.InstanceMethodInvoker.call(InstanceMethodInvoker.java:68)
+	at org.jruby.runtime.callsite.CachingCallSite.call(CachingCallSite.java:186)
+	at org.jruby.ast.CallTwoArgNode.interpret(CallTwoArgNode.java:59)
+	at org.jruby.ast.NewlineNode.interpret(NewlineNode.java:104)
+	at org.jruby.ast.BlockNode.interpret(BlockNode.java:71)
+	at org.jruby.ast.RescueBodyNode.interpret(RescueBodyNode.java:108)
+	at org.jruby.ast.RescueNode.handleException(RescueNode.java:164)
+	at org.jruby.ast.RescueNode.interpretWithJavaExceptions(RescueNode.java:121)
+	at org.jruby.ast.RescueNode.interpret(RescueNode.java:110)
+	at org.jruby.internal.runtime.methods.InterpretedMethod.call(InterpretedMethod.java:262)
+	at org.jruby.internal.runtime.methods.DefaultMethod.call(DefaultMethod.java:204)
+	at org.jruby.runtime.callsite.CachingCallSite.call(CachingCallSite.java:226)
+	at org.jruby.ast.CallThreeArgNode.interpret(CallThreeArgNode.java:61)
+	at org.jruby.ast.NewlineNode.interpret(NewlineNode.java:104)
+	at org.jruby.runtime.InterpretedBlock.evalBlockBody(InterpretedBlock.java:373)
+	at org.jruby.runtime.InterpretedBlock.yield(InterpretedBlock.java:327)
+	at org.jruby.runtime.InterpretedBlock.yield(InterpretedBlock.java:366)
+	at org.jruby.runtime.BlockBody.call(BlockBody.java:71)
+	at org.jruby.runtime.Block.call(Block.java:85)
+	at org.jruby.java.proxies.JavaInterfaceTemplate$11.call(JavaInterfaceTemplate.java:383)
+	at org.jruby.javasupport.util.RuntimeHelpers$MethodMissingMethod.call(RuntimeHelpers.java:401)
+	at anon_class8745767_758592918.newConnection(anon_class8745767_758592918.gen:13)
+	at jdbc_adapter.RubyJdbcConnection.reconnect(RubyJdbcConnection.java:423)
+	at jdbc_adapter.RubyJdbcConnection.connection(RubyJdbcConnection.java:171)
+	at jdbc_adapter.RubyJdbcConnection$i_method_0_0$RUBYINVOKER$connection.call(jdbc_adapter/RubyJdbcConnection$i_method_0_0$RUBYINVOKER$connection.gen:65535)
+	at org.jruby.runtime.callsite.CachingCallSite.call(CachingCallSite.java:106)
+	at org.jruby.ast.VCallNode.interpret(VCallNode.java:85)
+	at org.jruby.ast.NewlineNode.interpret(NewlineNode.java:104)
+	at org.jruby.ast.BlockNode.interpret(BlockNode.java:71)
+	at org.jruby.ast.RescueNode.executeBody(RescueNode.java:199)
+	at org.jruby.ast.RescueNode.interpretWithJavaExceptions(RescueNode.java:118)
+	at org.jruby.ast.RescueNode.interpret(RescueNode.java:110)
+	at org.jruby.internal.runtime.methods.InterpretedMethod.call(InterpretedMethod.java:201)
+	at org.jruby.internal.runtime.methods.DefaultMethod.call(DefaultMethod.java:180)
+	at org.jruby.runtime.callsite.CachingCallSite.callBlock(CachingCallSite.java:155)
+	at org.jruby.runtime.callsite.CachingCallSite.call(CachingCallSite.java:162)
+	at org.jruby.RubyClass$SpecificArityNew.call(RubyClass.java:804)
+	at org.jruby.internal.runtime.methods.DynamicMethod.call(DynamicMethod.java:186)
+	at org.jruby.runtime.callsite.CachingCallSite.call(CachingCallSite.java:146)
+	at org.jruby.ast.CallOneArgNode.interpret(CallOneArgNode.java:57)
+	at org.jruby.ast.LocalAsgnNode.interpret(LocalAsgnNode.java:123)
+	at org.jruby.ast.NewlineNode.interpret(NewlineNode.java:104)
+	at org.jruby.ast.BlockNode.interpret(BlockNode.java:71)
+	at org.jruby.ast.IfNode.interpret(IfNode.java:119)
+	at org.jruby.ast.NewlineNode.interpret(NewlineNode.java:104)
+	at org.jruby.ast.BlockNode.interpret(BlockNode.java:71)
+	at org.jruby.internal.runtime.methods.InterpretedMethod.call(InterpretedMethod.java:283)
+	at org.jruby.internal.runtime.methods.DefaultMethod.call(DefaultMethod.java:212)
+	at org.jruby.runtime.callsite.CachingCallSite.callBlock(CachingCallSite.java:235)
+	at org.jruby.runtime.callsite.CachingCallSite.call(CachingCallSite.java:242)
+	at org.jruby.RubyClass$SpecificArityNew.call(RubyClass.java:826)
+	at org.jruby.internal.runtime.methods.DynamicMethod.call(DynamicMethod.java:202)
+	at org.jruby.runtime.callsite.CachingCallSite.call(CachingCallSite.java:226)
+	at org.jruby.ast.CallThreeArgNode.interpret(CallThreeArgNode.java:61)
+	at org.jruby.ast.NewlineNode.interpret(NewlineNode.java:104)
+	at org.jruby.internal.runtime.methods.InterpretedMethod.call(InterpretedMethod.java:180)
+	at org.jruby.internal.runtime.methods.DefaultMethod.call(DefaultMethod.java:172)
+	at org.jruby.runtime.callsite.CachingCallSite.call(CachingCallSite.java:146)
+	at org.jruby.ast.FCallOneArgNode.interpret(FCallOneArgNode.java:36)
+	at org.jruby.ast.LocalAsgnNode.interpret(LocalAsgnNode.java:123)
+	at org.jruby.ast.NewlineNode.interpret(NewlineNode.java:104)
+	at org.jruby.ast.BlockNode.interpret(BlockNode.java:71)
+	at org.jruby.internal.runtime.methods.InterpretedMethod.call(InterpretedMethod.java:201)
+	at org.jruby.internal.runtime.methods.DefaultMethod.call(DefaultMethod.java:180)
+	at org.jruby.internal.runtime.methods.AliasMethod.call(AliasMethod.java:86)
+	at org.jruby.RubyClass.finvoke(RubyClass.java:542)
+	at org.jruby.RubyObject.send(RubyObject.java:1443)
+	at org.jruby.RubyObject$i_method_multi$RUBYINVOKER$send.call(org/jruby/RubyObject$i_method_multi$RUBYINVOKER$send.gen:65535)
+	at org.jruby.internal.runtime.methods.JavaMethod$JavaMethodZeroOrOneOrTwoOrNBlock.call(JavaMethod.java:283)
+	at org.jruby.runtime.callsite.CachingCallSite.call(CachingCallSite.java:186)
+	at org.jruby.ast.CallTwoArgNode.interpret(CallTwoArgNode.java:59)
+	at org.jruby.ast.NewlineNode.interpret(NewlineNode.java:104)
+	at org.jruby.internal.runtime.methods.InterpretedMethod.call(InterpretedMethod.java:139)
+	at org.jruby.internal.runtime.methods.DefaultMethod.call(DefaultMethod.java:156)
+	at org.jruby.runtime.callsite.CachingCallSite.call(CachingCallSite.java:106)
+	at org.jruby.ast.VCallNode.interpret(VCallNode.java:85)
+	at org.jruby.ast.LocalAsgnNode.interpret(LocalAsgnNode.java:123)
+	at org.jruby.ast.NewlineNode.interpret(NewlineNode.java:104)
+	at org.jruby.ast.BlockNode.interpret(BlockNode.java:71)
+	at org.jruby.internal.runtime.methods.InterpretedMethod.call(InterpretedMethod.java:139)
+	at org.jruby.internal.runtime.methods.DefaultMethod.call(DefaultMethod.java:156)
+	at org.jruby.runtime.callsite.CachingCallSite.call(CachingCallSite.java:106)
+	at org.jruby.ast.VCallNode.interpret(VCallNode.java:85)
+	at org.jruby.ast.NewlineNode.interpret(NewlineNode.java:104)
+	at org.jruby.ast.IfNode.interpret(IfNode.java:117)
+	at org.jruby.ast.IfNode.interpret(IfNode.java:119)
+	at org.jruby.ast.DAsgnNode.interpret(DAsgnNode.java:110)
+	at org.jruby.ast.NewlineNode.interpret(NewlineNode.java:104)
+	at org.jruby.ast.BlockNode.interpret(BlockNode.java:71)
+	at org.jruby.runtime.InterpretedBlock.evalBlockBody(InterpretedBlock.java:373)
+	at org.jruby.runtime.InterpretedBlock.yield(InterpretedBlock.java:346)
+	at org.jruby.runtime.InterpretedBlock.yield(InterpretedBlock.java:303)
+	at org.jruby.runtime.Block.yield(Block.java:194)
+	at org.jruby.RubyKernel.loop_1_9(RubyKernel.java:1251)
+	at org.jruby.RubyKernel$s_method_0_0$RUBYFRAMEDINVOKER$loop_1_9.call(org/jruby/RubyKernel$s_method_0_0$RUBYFRAMEDINVOKER$loop_1_9.gen:65535)
+	at org.jruby.runtime.callsite.CachingCallSite.callBlock(CachingCallSite.java:115)
+	at org.jruby.runtime.callsite.CachingCallSite.callIter(CachingCallSite.java:132)
+	at org.jruby.ast.FCallNoArgBlockNode.interpret(FCallNoArgBlockNode.java:32)
+	at org.jruby.ast.NewlineNode.interpret(NewlineNode.java:104)
+	at org.jruby.runtime.InterpretedBlock.evalBlockBody(InterpretedBlock.java:373)
+	at org.jruby.runtime.InterpretedBlock.yield(InterpretedBlock.java:294)
+	at org.jruby.runtime.InterpretedBlock.yieldSpecific(InterpretedBlock.java:228)
+	at org.jruby.runtime.Block.yieldSpecific(Block.java:99)
+	at org.jruby.ast.ZYieldNode.interpret(ZYieldNode.java:25)
+	at org.jruby.ast.NewlineNode.interpret(NewlineNode.java:104)
+	at org.jruby.ast.EnsureNode.interpret(EnsureNode.java:96)
+	at org.jruby.ast.BeginNode.interpret(BeginNode.java:83)
+	at org.jruby.ast.NewlineNode.interpret(NewlineNode.java:104)
+	at org.jruby.ast.BlockNode.interpret(BlockNode.java:71)
+	at org.jruby.internal.runtime.methods.InterpretedMethod.call(InterpretedMethod.java:160)
+	at org.jruby.internal.runtime.methods.DefaultMethod.call(DefaultMethod.java:164)
+	at org.jruby.internal.runtime.methods.AliasMethod.call(AliasMethod.java:81)
+	at org.jruby.runtime.callsite.CachingCallSite.callBlock(CachingCallSite.java:115)
+	at org.jruby.runtime.callsite.CachingCallSite.call(CachingCallSite.java:122)
+	at org.jruby.ast.CallNoArgBlockNode.interpret(CallNoArgBlockNode.java:64)
+	at org.jruby.ast.NewlineNode.interpret(NewlineNode.java:104)
+	at org.jruby.internal.runtime.methods.InterpretedMethod.call(InterpretedMethod.java:139)
+	at org.jruby.internal.runtime.methods.DefaultMethod.call(DefaultMethod.java:156)
+	at org.jruby.runtime.callsite.CachingCallSite.call(CachingCallSite.java:106)
+	at org.jruby.ast.VCallNode.interpret(VCallNode.java:85)
+	at org.jruby.ast.AttrAssignTwoArgNode.interpret(AttrAssignTwoArgNode.java:36)
+	at org.jruby.ast.NewlineNode.interpret(NewlineNode.java:104)
+	at org.jruby.ast.IfNode.interpret(IfNode.java:119)
+	at org.jruby.ast.NewlineNode.interpret(NewlineNode.java:104)
+	at org.jruby.internal.runtime.methods.InterpretedMethod.call(InterpretedMethod.java:139)
+	at org.jruby.internal.runtime.methods.DefaultMethod.call(DefaultMethod.java:156)
+	at org.jruby.runtime.callsite.CachingCallSite.call(CachingCallSite.java:106)
+	at org.jruby.ast.CallNoArgNode.interpret(CallNoArgNode.java:61)
+	at org.jruby.ast.AndNode.interpret(AndNode.java:94)
+	at org.jruby.ast.NewlineNode.interpret(NewlineNode.java:104)
+	at org.jruby.ast.OrNode.interpret(OrNode.java:94)
+	at org.jruby.ast.NewlineNode.interpret(NewlineNode.java:104)
+	at org.jruby.ast.BlockNode.interpret(BlockNode.java:71)
+	at org.jruby.internal.runtime.methods.InterpretedMethod.call(InterpretedMethod.java:180)
+	at org.jruby.internal.runtime.methods.DefaultMethod.call(DefaultMethod.java:172)
+	at org.jruby.runtime.callsite.CachingCallSite.call(CachingCallSite.java:146)
+	at org.jruby.ast.CallOneArgNode.interpret(CallOneArgNode.java:57)
+	at org.jruby.ast.NewlineNode.interpret(NewlineNode.java:104)
+	at org.jruby.internal.runtime.methods.InterpretedMethod.call(InterpretedMethod.java:139)
+	at org.jruby.internal.runtime.methods.DefaultMethod.call(DefaultMethod.java:156)
+	at org.jruby.runtime.callsite.CachingCallSite.call(CachingCallSite.java:106)
+	at org.jruby.ast.VCallNode.interpret(VCallNode.java:85)
+	at org.jruby.ast.NewlineNode.interpret(NewlineNode.java:104)
+	at org.jruby.internal.runtime.methods.InterpretedMethod.call(InterpretedMethod.java:139)
+	at org.jruby.internal.runtime.methods.DefaultMethod.call(DefaultMethod.java:156)
+	at org.jruby.runtime.callsite.CachingCallSite.call(CachingCallSite.java:106)
+	at org.jruby.ast.VCallNode.interpret(VCallNode.java:85)
+	at org.jruby.ast.CallNoArgBlockPassNode.interpret(CallNoArgBlockPassNode.java:53)
+	at org.jruby.ast.NewlineNode.interpret(NewlineNode.java:104)
+	at org.jruby.ast.IfNode.interpret(IfNode.java:119)
+	at org.jruby.ast.NewlineNode.interpret(NewlineNode.java:104)
+	at org.jruby.internal.runtime.methods.InterpretedMethod.call(InterpretedMethod.java:160)
+	at org.jruby.internal.runtime.methods.DefaultMethod.call(DefaultMethod.java:164)
+	at org.jruby.runtime.callsite.CachingCallSite.callBlock(CachingCallSite.java:115)
+	at org.jruby.runtime.callsite.CachingCallSite.call(CachingCallSite.java:122)
+	at org.jruby.ast.CallNoArgBlockNode.interpret(CallNoArgBlockNode.java:64)
+	at org.jruby.ast.NewlineNode.interpret(NewlineNode.java:104)
+	at org.jruby.internal.runtime.methods.InterpretedMethod.call(InterpretedMethod.java:180)
+	at org.jruby.internal.runtime.methods.DefaultMethod.call(DefaultMethod.java:172)
+	at org.jruby.runtime.callsite.CachingCallSite.call(CachingCallSite.java:146)
+	at org.jruby.ast.CallOneArgNode.interpret(CallOneArgNode.java:57)
+	at org.jruby.ast.NewlineNode.interpret(NewlineNode.java:104)
+	at org.jruby.ast.EnsureNode.interpret(EnsureNode.java:96)
+	at org.jruby.internal.runtime.methods.InterpretedMethod.call(InterpretedMethod.java:180)
+	at org.jruby.internal.runtime.methods.DefaultMethod.call(DefaultMethod.java:172)
+	at org.jruby.runtime.callsite.CachingCallSite.call(CachingCallSite.java:146)
+	at org.jruby.ast.CallOneArgNode.interpret(CallOneArgNode.java:57)
+	at org.jruby.ast.ToAryNode.interpret(ToAryNode.java:69)
+	at org.jruby.ast.MultipleAsgnNode.interpret(MultipleAsgnNode.java:127)
+	at org.jruby.ast.NewlineNode.interpret(NewlineNode.java:104)
+	at org.jruby.ast.BlockNode.interpret(BlockNode.java:71)
+	at org.jruby.internal.runtime.methods.InterpretedMethod.call(InterpretedMethod.java:180)
+	at org.jruby.internal.runtime.methods.DefaultMethod.call(DefaultMethod.java:172)
+	at org.jruby.runtime.callsite.CachingCallSite.call(CachingCallSite.java:146)
+	at org.jruby.ast.CallOneArgNode.interpret(CallOneArgNode.java:57)
+	at org.jruby.ast.NewlineNode.interpret(NewlineNode.java:104)
+	at org.jruby.ast.BlockNode.interpret(BlockNode.java:71)
+	at org.jruby.internal.runtime.methods.InterpretedMethod.call(InterpretedMethod.java:180)
+	at org.jruby.internal.runtime.methods.DefaultMethod.call(DefaultMethod.java:172)
+	at org.jruby.runtime.callsite.CachingCallSite.call(CachingCallSite.java:146)
+	at org.jruby.ast.CallOneArgNode.interpret(CallOneArgNode.java:57)
+	at org.jruby.ast.NewlineNode.interpret(NewlineNode.java:104)
+	at org.jruby.ast.BlockNode.interpret(BlockNode.java:71)
+	at org.jruby.internal.runtime.methods.InterpretedMethod.call(InterpretedMethod.java:180)
+	at org.jruby.internal.runtime.methods.DefaultMethod.call(DefaultMethod.java:172)
+	at org.jruby.runtime.callsite.CachingCallSite.call(CachingCallSite.java:146)
+	at org.jruby.ast.CallOneArgNode.interpret(CallOneArgNode.java:57)
+	at org.jruby.ast.ToAryNode.interpret(ToAryNode.java:69)
+	at org.jruby.ast.MultipleAsgnNode.interpret(MultipleAsgnNode.java:127)
+	at org.jruby.ast.NewlineNode.interpret(NewlineNode.java:104)
+	at org.jruby.ast.BlockNode.interpret(BlockNode.java:71)
+	at org.jruby.internal.runtime.methods.InterpretedMethod.call(InterpretedMethod.java:180)
+	at org.jruby.internal.runtime.methods.DefaultMethod.call(DefaultMethod.java:172)
+	at org.jruby.runtime.callsite.CachingCallSite.call(CachingCallSite.java:146)
+	at org.jruby.ast.CallOneArgNode.interpret(CallOneArgNode.java:57)
+	at org.jruby.ast.NewlineNode.interpret(NewlineNode.java:104)
+	at org.jruby.ast.RescueNode.executeBody(RescueNode.java:199)
+	at org.jruby.ast.RescueNode.interpretWithJavaExceptions(RescueNode.java:118)
+	at org.jruby.ast.RescueNode.interpret(RescueNode.java:110)
+	at org.jruby.internal.runtime.methods.InterpretedMethod.call(InterpretedMethod.java:180)
+	at org.jruby.internal.runtime.methods.DefaultMethod.call(DefaultMethod.java:172)
+	at org.jruby.runtime.callsite.CachingCallSite.call(CachingCallSite.java:146)
+	at org.jruby.ast.CallOneArgNode.interpret(CallOneArgNode.java:57)
+	at org.jruby.ast.NewlineNode.interpret(NewlineNode.java:104)
+	at org.jruby.runtime.InterpretedBlock.evalBlockBody(InterpretedBlock.java:373)
+	at org.jruby.runtime.InterpretedBlock.yield(InterpretedBlock.java:346)
+	at org.jruby.runtime.InterpretedBlock.yield(InterpretedBlock.java:303)
+	at org.jruby.runtime.Block.yield(Block.java:194)
+	at org.jruby.libraries.ThreadLibrary$Mutex.synchronize(ThreadLibrary.java:195)
+	at org.jruby.libraries.ThreadLibrary$Mutex$i_method_0_0$RUBYINVOKER$synchronize.call(org/jruby/libraries/ThreadLibrary$Mutex$i_method_0_0$RUBYINVOKER$synchronize.gen:65535)
+	at org.jruby.runtime.callsite.CachingCallSite.callBlock(CachingCallSite.java:115)
+	at org.jruby.runtime.callsite.CachingCallSite.call(CachingCallSite.java:122)
+	at org.jruby.ast.CallNoArgBlockNode.interpret(CallNoArgBlockNode.java:64)
+	at org.jruby.ast.NewlineNode.interpret(NewlineNode.java:104)
+	at org.jruby.ast.BlockNode.interpret(BlockNode.java:71)
+	at org.jruby.ast.EnsureNode.interpret(EnsureNode.java:96)
+	at org.jruby.internal.runtime.methods.InterpretedMethod.call(InterpretedMethod.java:180)
+	at org.jruby.internal.runtime.methods.DefaultMethod.call(DefaultMethod.java:172)
+	at org.jruby.runtime.callsite.CachingCallSite.call(CachingCallSite.java:146)
+	at org.jruby.ast.CallOneArgNode.interpret(CallOneArgNode.java:57)
+	at org.jruby.ast.NewlineNode.interpret(NewlineNode.java:104)
+	at org.jruby.ast.BlockNode.interpret(BlockNode.java:71)
+	at org.jruby.runtime.InterpretedBlock.evalBlockBody(InterpretedBlock.java:373)
+	at org.jruby.runtime.InterpretedBlock.yield(InterpretedBlock.java:294)
+	at org.jruby.runtime.InterpretedBlock.yieldSpecific(InterpretedBlock.java:228)
+	at org.jruby.runtime.Block.yieldSpecific(Block.java:99)
+	at org.jruby.ast.ZYieldNode.interpret(ZYieldNode.java:25)
+	at org.jruby.ast.ToAryNode.interpret(ToAryNode.java:69)
+	at org.jruby.ast.MultipleAsgnNode.interpret(MultipleAsgnNode.java:127)
+	at org.jruby.ast.NewlineNode.interpret(NewlineNode.java:104)
+	at org.jruby.ast.BlockNode.interpret(BlockNode.java:71)
+	at org.jruby.ast.RescueNode.executeBody(RescueNode.java:199)
+	at org.jruby.ast.RescueNode.interpretWithJavaExceptions(RescueNode.java:118)
+	at org.jruby.ast.RescueNode.interpret(RescueNode.java:110)
+	at org.jruby.ast.BeginNode.interpret(BeginNode.java:83)
+	at org.jruby.ast.NewlineNode.interpret(NewlineNode.java:104)
+	at org.jruby.ast.BlockNode.interpret(BlockNode.java:71)
+	at org.jruby.internal.runtime.methods.InterpretedMethod.call(InterpretedMethod.java:160)
+	at org.jruby.internal.runtime.methods.DefaultMethod.call(DefaultMethod.java:164)
+	at org.jruby.runtime.callsite.CachingCallSite.callBlock(CachingCallSite.java:115)
+	at org.jruby.runtime.callsite.CachingCallSite.call(CachingCallSite.java:122)
+	at org.jruby.ast.CallNoArgBlockNode.interpret(CallNoArgBlockNode.java:64)
+	at org.jruby.ast.NewlineNode.interpret(NewlineNode.java:104)
+	at org.jruby.ast.IfNode.interpret(IfNode.java:119)
+	at org.jruby.ast.NewlineNode.interpret(NewlineNode.java:104)
+	at org.jruby.internal.runtime.methods.InterpretedMethod.call(InterpretedMethod.java:180)
+	at org.jruby.internal.runtime.methods.DefaultMethod.call(DefaultMethod.java:172)
+	at org.jruby.runtime.callsite.CachingCallSite.call(CachingCallSite.java:146)
+	at org.jruby.ast.CallOneArgNode.interpret(CallOneArgNode.java:57)
+	at org.jruby.ast.NewlineNode.interpret(NewlineNode.java:104)
+	at org.jruby.ast.BlockNode.interpret(BlockNode.java:71)
+	at org.jruby.internal.runtime.methods.InterpretedMethod.call(InterpretedMethod.java:180)
+	at org.jruby.internal.runtime.methods.DefaultMethod.call(DefaultMethod.java:172)
+	at org.jruby.runtime.callsite.CachingCallSite.call(CachingCallSite.java:146)
+	at org.jruby.ast.CallOneArgNode.interpret(CallOneArgNode.java:57)
+	at org.jruby.ast.ReturnNode.interpret(ReturnNode.java:92)
+	at org.jruby.ast.NewlineNode.interpret(NewlineNode.java:104)
+	at org.jruby.ast.BlockNode.interpret(BlockNode.java:71)
+	at org.jruby.runtime.InterpretedBlock.evalBlockBody(InterpretedBlock.java:373)
+	at org.jruby.runtime.InterpretedBlock.yield(InterpretedBlock.java:346)
+	at org.jruby.runtime.InterpretedBlock.yield(InterpretedBlock.java:303)
+	at org.jruby.runtime.Block.yield(Block.java:194)
+	at org.jruby.RubyArray.eachCommon(RubyArray.java:1630)
+	at org.jruby.RubyArray.each(RubyArray.java:1637)
+	at org.jruby.RubyArray$i_method_0_0$RUBYFRAMEDINVOKER$each.call(org/jruby/RubyArray$i_method_0_0$RUBYFRAMEDINVOKER$each.gen:65535)
+	at org.jruby.runtime.callsite.CachingCallSite.callBlock(CachingCallSite.java:115)
+	at org.jruby.runtime.callsite.CachingCallSite.call(CachingCallSite.java:122)
+	at org.jruby.ast.CallNoArgBlockNode.interpret(CallNoArgBlockNode.java:64)
+	at org.jruby.ast.NewlineNode.interpret(NewlineNode.java:104)
+	at org.jruby.ast.BlockNode.interpret(BlockNode.java:71)
+	at org.jruby.internal.runtime.methods.InterpretedMethod.call(InterpretedMethod.java:180)
+	at org.jruby.internal.runtime.methods.DefaultMethod.call(DefaultMethod.java:172)
+	at org.jruby.runtime.callsite.CachingCallSite.call(CachingCallSite.java:146)
+	at org.jruby.ast.CallOneArgNode.interpret(CallOneArgNode.java:57)
+	at org.jruby.ast.LocalAsgnNode.interpret(LocalAsgnNode.java:123)
+	at org.jruby.ast.NewlineNode.interpret(NewlineNode.java:104)
+	at org.jruby.ast.BlockNode.interpret(BlockNode.java:71)
+	at org.jruby.internal.runtime.methods.InterpretedMethod.call(InterpretedMethod.java:180)
+	at org.jruby.internal.runtime.methods.DefaultMethod.call(DefaultMethod.java:172)
+	at org.jruby.runtime.callsite.CachingCallSite.call(CachingCallSite.java:146)
+	at org.jruby.ast.CallOneArgNode.interpret(CallOneArgNode.java:57)
+	at org.jruby.ast.ToAryNode.interpret(ToAryNode.java:69)
+	at org.jruby.ast.MultipleAsgnNode.interpret(MultipleAsgnNode.java:127)
+	at org.jruby.ast.NewlineNode.interpret(NewlineNode.java:104)
+	at org.jruby.ast.BlockNode.interpret(BlockNode.java:71)
+	at org.jruby.internal.runtime.methods.InterpretedMethod.call(InterpretedMethod.java:180)
+	at org.jruby.internal.runtime.methods.DefaultMethod.call(DefaultMethod.java:172)
+	at org.jruby.runtime.callsite.CachingCallSite.call(CachingCallSite.java:146)
+	at org.jruby.ast.CallOneArgNode.interpret(CallOneArgNode.java:57)
+	at org.jruby.ast.ToAryNode.interpret(ToAryNode.java:69)
+	at org.jruby.ast.MultipleAsgnNode.interpret(MultipleAsgnNode.java:127)
+	at org.jruby.ast.NewlineNode.interpret(NewlineNode.java:104)
+	at org.jruby.ast.BlockNode.interpret(BlockNode.java:71)
+	at org.jruby.internal.runtime.methods.InterpretedMethod.call(InterpretedMethod.java:221)
+	at org.jruby.internal.runtime.methods.DefaultMethod.call(DefaultMethod.java:188)
+	at org.jruby.runtime.callsite.CachingCallSite.call(CachingCallSite.java:186)
+	at org.jruby.ast.CallTwoArgNode.interpret(CallTwoArgNode.java:59)
+	at org.jruby.ast.NewlineNode.interpret(NewlineNode.java:104)
+	at org.jruby.ast.BlockNode.interpret(BlockNode.java:71)
+	at org.jruby.internal.runtime.methods.InterpretedMethod.call(InterpretedMethod.java:221)
+	at org.jruby.internal.runtime.methods.DefaultMethod.call(DefaultMethod.java:188)
+	at org.jruby.runtime.callsite.CachingCallSite.call(CachingCallSite.java:186)
+	at org.jruby.ast.CallTwoArgNode.interpret(CallTwoArgNode.java:59)
+	at org.jruby.ast.NewlineNode.interpret(NewlineNode.java:104)
+	at org.jruby.ast.BlockNode.interpret(BlockNode.java:71)
+	at org.jruby.ast.RescueNode.executeBody(RescueNode.java:199)
+	at org.jruby.ast.RescueNode.interpretWithJavaExceptions(RescueNode.java:118)
+	at org.jruby.ast.RescueNode.interpret(RescueNode.java:110)
+	at org.jruby.ast.EnsureNode.interpret(EnsureNode.java:96)
+	at org.jruby.ast.BeginNode.interpret(BeginNode.java:83)
+	at org.jruby.ast.NewlineNode.interpret(NewlineNode.java:104)
+	at org.jruby.ast.BlockNode.interpret(BlockNode.java:71)
+	at org.jruby.ast.WhileNode.interpret(WhileNode.java:131)
+	at org.jruby.ast.NewlineNode.interpret(NewlineNode.java:104)
+	at org.jruby.internal.runtime.methods.InterpretedMethod.call(InterpretedMethod.java:180)
+	at org.jruby.internal.runtime.methods.DefaultMethod.call(DefaultMethod.java:172)
+	at org.jruby.runtime.callsite.CachingCallSite.call(CachingCallSite.java:146)
+	at org.jruby.ast.FCallOneArgNode.interpret(FCallOneArgNode.java:36)
+	at org.jruby.ast.IfNode.interpret(IfNode.java:119)
+	at org.jruby.ast.NewlineNode.interpret(NewlineNode.java:104)
+	at org.jruby.ast.BlockNode.interpret(BlockNode.java:71)
+	at org.jruby.ast.RescueNode.executeBody(RescueNode.java:199)
+	at org.jruby.ast.RescueNode.interpretWithJavaExceptions(RescueNode.java:118)
+	at org.jruby.ast.RescueNode.interpret(RescueNode.java:110)
+	at org.jruby.ast.EnsureNode.interpret(EnsureNode.java:96)
+	at org.jruby.ast.BeginNode.interpret(BeginNode.java:83)
+	at org.jruby.ast.NewlineNode.interpret(NewlineNode.java:104)
+	at org.jruby.runtime.InterpretedBlock.evalBlockBody(InterpretedBlock.java:373)
+	at org.jruby.runtime.InterpretedBlock.yield(InterpretedBlock.java:327)
+	at org.jruby.runtime.BlockBody.call(BlockBody.java:78)
+	at org.jruby.runtime.Block.call(Block.java:89)
+	at org.jruby.RubyProc.call(RubyProc.java:224)
+	at org.jruby.RubyProc.call(RubyProc.java:207)
+	at org.jruby.internal.runtime.RubyRunnable.run(RubyRunnable.java:94)
+	at java.lang.Thread.run(Thread.java:619)
+
+
+** END NESTED EXCEPTION **
+
+
+
+Last packet sent to the server was 0 ms ago.
+    D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/gems/1.8/gems/activerecord-jdbc-adapter-0.9.2/lib/active_record/connection_adapters/jdbc_adapter.rb:326:in `initialize'
+    D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/gems/1.8/gems/activerecord-jdbc-adapter-0.9.2/lib/active_record/connection_adapters/jdbc_adapter.rb:453:in `new'
+    D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/gems/1.8/gems/activerecord-jdbc-adapter-0.9.2/lib/active_record/connection_adapters/jdbc_adapter.rb:453:in `initialize'
+    D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/gems/1.8/gems/activerecord-jdbc-adapter-0.9.2/lib/active_record/connection_adapters/jdbc_adapter.rb:49:in `new'
+    D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/gems/1.8/gems/activerecord-jdbc-adapter-0.9.2/lib/active_record/connection_adapters/jdbc_adapter.rb:49:in `jdbc_connection'
+    D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/gems/1.8/gems/activerecord-jdbc-adapter-0.9.2/lib/jdbc_adapter/jdbc_mysql.rb:21:in `mysql_connection'
+    D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `checkout'
+    D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `checkout'
+    D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/monitor.rb:191:in `mon_synchronize'
+    D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:9:in `cache'
+    D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:28:in `call'
+    D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+    D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+    D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/params_parser.rb:15:in `call'
+    D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/session/cookie_store.rb:93:in `call'
+    D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/failsafe.rb:26:in `call'
+    D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+    D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:114:in `call'
+    D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/reloader.rb:34:in `run'
+    D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:108:in `call'
+    D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/gems/1.8/gems/rails-2.3.4/lib/rails/rack/static.rb:31:in `call'
+    D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:48:in `call'
+    D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `each'
+    D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `call'
+    D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/gems/1.8/gems/rails-2.3.4/lib/rails/rack/log_tailer.rb:17:in `call'
+    D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+    D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/webrick.rb:46:in `service'
+    D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/webrick.rb:13:in `run'
+    D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/gems/1.8/gems/rails-2.3.4/lib/commands/server.rb:111
+    D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/gems/1.8/gems/rails-2.3.4/lib/commands/server.rb:31:in `require'
+    D:/Program Files/NetBeans 6.9/ruby/jruby-1.5.0/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script\server:3
